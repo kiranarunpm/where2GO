@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="27.626" height="28" viewBox="0 0 27.626 28">
+  <g id="Frame_1" data-name="Frame 1" transform="translate(0 0.167)" style="mix-blend-mode: normal;isolation: isolate">
+    <rect id="Frame_1-2" data-name="Frame 1" width="27" height="28" transform="translate(0.626 -0.167)" fill="none" style="mix-blend-mode: normal;isolation: isolate"/>
+    <g id="icMenu" transform="translate(0 2.007)" style="mix-blend-mode: normal;isolation: isolate">
+      <path id="bar" d="M21.213,0a1.72,1.72,0,1,1,0,3.44H1.72A1.72,1.72,0,1,1,1.72,0Z" transform="translate(0 0)" fill="#5f5f5f" style="mix-blend-mode: normal;isolation: isolate"/>
+      <path id="bar-2" data-name="bar" d="M21.213,0a1.72,1.72,0,1,1,0,3.44H1.72A1.72,1.72,0,1,1,1.72,0Z" transform="translate(0 18.347)" fill="#5f5f5f" style="mix-blend-mode: normal;isolation: isolate"/>
+      <path id="bar-3" data-name="bar" d="M21.213,0a1.72,1.72,0,1,1,0,3.44H1.72A1.72,1.72,0,1,1,1.72,0Z" transform="translate(4.587 9.173)" fill="#5f5f5f" style="mix-blend-mode: normal;isolation: isolate"/>
+    </g>
+  </g>
+</svg>

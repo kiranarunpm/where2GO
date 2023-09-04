@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="212" id="KGk-i7-Jjw" customClass="ChatBubbleLeft" customModule="Where2Go">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="212"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="212"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nIF-1D-PQ2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="212"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VpR-YK-6lb">
+                                <rect key="frame" x="15" y="34" width="235" height="144"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4zY-zP-sXc">
+                                        <rect key="frame" x="15" y="15" width="205" height="114"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="PzA-qf-5Q5"/>
+                                        </constraints>
+                                        <string key="text">Free Download More Vertical 35 SVG vector file in monocolor and multicolor type for Sketch and Figma from More Vertical 35 Vectors svg vector collection. More Vertical 35 Vectors SVG </string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="secondaryColor"/>
+                                <constraints>
+                                    <constraint firstItem="4zY-zP-sXc" firstAttribute="top" secondItem="VpR-YK-6lb" secondAttribute="top" constant="15" id="MmO-tM-72X"/>
+                                    <constraint firstAttribute="trailing" secondItem="4zY-zP-sXc" secondAttribute="trailing" constant="15" id="Pt4-MG-55F"/>
+                                    <constraint firstAttribute="bottom" secondItem="4zY-zP-sXc" secondAttribute="bottom" constant="15" id="rfU-iN-3Qd"/>
+                                    <constraint firstItem="4zY-zP-sXc" firstAttribute="leading" secondItem="VpR-YK-6lb" secondAttribute="leading" constant="15" id="xSB-9c-shE"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="04.44 PM" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0kF-cA-6yV" customClass="WTGLabel" customModule="Where2Go" customModuleProvider="target">
+                                <rect key="frame" x="15" y="182" width="47" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontStyle">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="VpR-YK-6lb" secondAttribute="bottom" constant="34" id="0Ft-If-c8t"/>
+                            <constraint firstItem="0kF-cA-6yV" firstAttribute="top" secondItem="VpR-YK-6lb" secondAttribute="bottom" constant="4" id="AAC-DG-5SI"/>
+                            <constraint firstItem="VpR-YK-6lb" firstAttribute="leading" secondItem="nIF-1D-PQ2" secondAttribute="leading" constant="15" id="MD0-O3-IID"/>
+                            <constraint firstItem="0kF-cA-6yV" firstAttribute="leading" secondItem="VpR-YK-6lb" secondAttribute="leading" id="NNs-nn-tme"/>
+                            <constraint firstAttribute="trailing" secondItem="VpR-YK-6lb" secondAttribute="trailing" constant="70" id="s4C-pU-A1V"/>
+                            <constraint firstItem="VpR-YK-6lb" firstAttribute="top" secondItem="nIF-1D-PQ2" secondAttribute="top" constant="34" id="vPq-ko-dgp"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="nIF-1D-PQ2" secondAttribute="bottom" id="LUH-ka-KtF"/>
+                    <constraint firstItem="nIF-1D-PQ2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="N1k-od-hEg"/>
+                    <constraint firstAttribute="trailing" secondItem="nIF-1D-PQ2" secondAttribute="trailing" id="W6i-Le-hLp"/>
+                    <constraint firstItem="nIF-1D-PQ2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="tbF-8n-o4f"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="baseView" destination="VpR-YK-6lb" id="Epy-jd-hHV"/>
+            </connections>
+            <point key="canvasLocation" x="30.534351145038165" y="99.295774647887328"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="0kF-cA-6yV">
+            <size key="intrinsicContentSize" width="47" height="12"/>
+        </designable>
+        <designable name="4zY-zP-sXc">
+            <size key="intrinsicContentSize" width="1200.6666666666667" height="17"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="secondaryColor">
+            <color red="0.92900002002716064" green="0.81599998474121094" blue="0.53700000047683716" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

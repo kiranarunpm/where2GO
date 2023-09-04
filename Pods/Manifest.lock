@@ -1,0 +1,40 @@
+PODS:
+  - GoogleMaps (8.1.0):
+    - GoogleMaps/Maps (= 8.1.0)
+  - GoogleMaps/Base (8.1.0)
+  - GoogleMaps/Maps (8.1.0):
+    - GoogleMaps/Base
+  - IQKeyboardManagerSwift (6.5.12)
+  - ReadMoreTextView (3.0.1)
+  - SideMenu (6.5.0)
+  - SwiftyStarRatingView (1.0.4)
+  - TextFieldEffects (1.6.0)
+
+DEPENDENCIES:
+  - GoogleMaps (~> 8.1)
+  - IQKeyboardManagerSwift
+  - ReadMoreTextView (~> 3.0)
+  - SideMenu (~> 6.5)
+  - SwiftyStarRatingView (~> 1.0)
+  - TextFieldEffects (~> 1.6)
+
+SPEC REPOS:
+  trunk:
+    - GoogleMaps
+    - IQKeyboardManagerSwift
+    - ReadMoreTextView
+    - SideMenu
+    - SwiftyStarRatingView
+    - TextFieldEffects
+
+SPEC CHECKSUMS:
+  GoogleMaps: 97300a4b89a3641563782c52228c4530f5fe0d89
+  IQKeyboardManagerSwift: 371b08cb39664fb56030f5345c815a4ffc74bbc0
+  ReadMoreTextView: 19147adf93abce6d7271e14031a00303fe28720d
+  SideMenu: f583187d21c5b1dd04c72002be544b555a2627a2
+  SwiftyStarRatingView: a2b0057700e0adeb8e7442c55d99cb53b531d2f4
+  TextFieldEffects: 529b8aff706fb40f82c41c780c0777941a893796
+
+PODFILE CHECKSUM: f93c3b12a2089bb320a75f29a8b65b6345c2ca64
+
+COCOAPODS: 1.12.1

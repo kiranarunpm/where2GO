@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="331" id="KGk-i7-Jjw" customClass="HomeWidgetCell" customModule="Where2Go" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="331"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="331"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fcK-8P-FCK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="331"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cDm-3H-kTc">
+                                <rect key="frame" x="231" y="304.66666666666669" width="64" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="1Z7-xM-qfX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="View More">
+                                    <color key="titleColor" name="lightGreenColor"/>
+                                </state>
+                            </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Xop-4G-GKy">
+                                <rect key="frame" x="0.0" y="-0.33333333333334281" width="320" height="300"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="A9x-1F-jIf"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="cM1-ze-yJy">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Xop-4G-GKy" firstAttribute="top" secondItem="fcK-8P-FCK" secondAttribute="top" constant="-0.33000000000000002" id="1lh-fD-n4A"/>
+                            <constraint firstAttribute="bottom" secondItem="cDm-3H-kTc" secondAttribute="bottom" constant="6.3300000000000001" id="Fke-bE-oyY"/>
+                            <constraint firstAttribute="trailing" secondItem="Xop-4G-GKy" secondAttribute="trailing" id="Ufy-xy-SUQ"/>
+                            <constraint firstItem="Xop-4G-GKy" firstAttribute="leading" secondItem="fcK-8P-FCK" secondAttribute="leading" id="d5l-ap-uqz"/>
+                            <constraint firstItem="cDm-3H-kTc" firstAttribute="top" secondItem="Xop-4G-GKy" secondAttribute="bottom" constant="5" id="dDB-MK-wzA"/>
+                            <constraint firstAttribute="trailing" secondItem="cDm-3H-kTc" secondAttribute="trailing" constant="25" id="tjG-CP-5x3"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="fcK-8P-FCK" secondAttribute="trailing" id="Fqw-Km-kQD"/>
+                    <constraint firstAttribute="bottom" secondItem="fcK-8P-FCK" secondAttribute="bottom" id="OG8-AC-zDF"/>
+                    <constraint firstItem="fcK-8P-FCK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="WOe-Cd-KZ3"/>
+                    <constraint firstItem="fcK-8P-FCK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="YgO-p7-ar9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="colView" destination="Xop-4G-GKy" id="Vxb-DM-cr8"/>
+            </connections>
+            <point key="canvasLocation" x="-21.374045801526716" y="141.19718309859155"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="lightGreenColor">
+            <color red="0.016000000759959221" green="0.46299999952316284" blue="0.3059999942779541" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

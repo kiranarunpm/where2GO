@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="27" viewBox="0 0 28 27">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="search_2_1" data-name="search (2) 1" width="28" height="27" transform="translate(-0.072 -0.357)" fill="none" style="mix-blend-mode: normal;isolation: isolate"/>
+    </clipPath>
+  </defs>
+  <g id="search_2_1-2" data-name="search (2) 1" transform="translate(0.072 0.357)" clip-path="url(#clip-path)" style="mix-blend-mode: normal;isolation: isolate">
+    <rect id="search_2_1-3" data-name="search (2) 1" width="28" height="27" transform="translate(-0.072 -0.357)" fill="none" style="mix-blend-mode: normal;isolation: isolate"/>
+    <g id="Group" transform="translate(0.368 -0.448)" style="mix-blend-mode: normal;isolation: isolate">
+      <path id="Vector" d="M17.866,19.808l7.321,7.321a1.377,1.377,0,0,0,1.947-1.947l-7.321-7.321a11.078,11.078,0,1,0-1.947,1.947ZM16.959,5.189A8.319,8.319,0,1,1,5.194,16.954h0A8.289,8.289,0,0,1,5.151,5.232l.043-.043A8.319,8.319,0,0,1,16.959,5.189Z" transform="translate(0 0)" fill="#edd089" style="mix-blend-mode: normal;isolation: isolate"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="loN-ir-2mc">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Side Menu Navigation Controller-->
+        <scene sceneID="dAZ-bb-aZQ">
+            <objects>
+                <navigationController storyboardIdentifier="LeftMenuNavigationController" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="loN-ir-2mc" customClass="SideMenuNavigationController" customModule="SideMenu" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="gw4-j3-pcI"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4Xj-O9-K1z">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="leftSide" value="NO"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="menuWidth">
+                            <real key="value" value="300"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <segue destination="6dW-PF-HGy" kind="relationship" relationship="rootViewController" id="igA-rZ-gWG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cwL-JH-kYY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-767" y="66"/>
+        </scene>
+        <!--Side MenuVC-->
+        <scene sceneID="Qp6-gi-zBq">
+            <objects>
+                <viewController storyboardIdentifier="SideMenuVC" id="6dW-PF-HGy" customClass="SideMenuVC" customModule="Where2Go" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="l43-Bb-G0j">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CnH-fA-Q76">
+                                <rect key="frame" x="318" y="59" width="75" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="Hdx-8a-HXa"/>
+                                    <constraint firstAttribute="width" constant="75" id="eqG-xd-XEL"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="close-circle-svgrepo-com"/>
+                                <connections>
+                                    <action selector="dismissBtn:" destination="6dW-PF-HGy" eventType="touchUpInside" id="gOg-GP-xpX"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="FU9-8L-ZhN">
+                                <rect key="frame" x="59" y="149" width="275" height="375"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6gH-mQ-mfg">
+                                        <rect key="frame" x="0.0" y="0.0" width="275" height="30"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="  Restaurants" image="food-dinner-svgrepo-com (1)"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wo3-S2-FGE">
+                                        <rect key="frame" x="0.0" y="60" width="275" height="30"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="  Cafes" image="cafe-svgrepo-com"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="avc-UM-w7B">
+                                        <rect key="frame" x="0.0" y="120" width="275" height="28"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="  Events" image="schedule-svgrepo-com-2"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d6E-Q3-uHH">
+                                        <rect key="frame" x="0.0" y="178" width="275" height="26"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="  Chats" image="chat-line-svgrepo-com-2"/>
+                                        <connections>
+                                            <action selector="chatHistoryBtn:" destination="6dW-PF-HGy" eventType="touchUpInside" id="pgc-rV-vTz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d1H-ZP-hgz">
+                                        <rect key="frame" x="0.0" y="234" width="275" height="28"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="   Profile" image="profile-tick-svgrepo-com"/>
+                                        <connections>
+                                            <action selector="profileBtn:" destination="6dW-PF-HGy" eventType="touchUpInside" id="hoe-GJ-THV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w56-EG-cBU">
+                                        <rect key="frame" x="0.0" y="292" width="275" height="26"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="   Bookmarks" image="Vector"/>
+                                        <connections>
+                                            <action selector="bookmarkBtn:" destination="6dW-PF-HGy" eventType="touchUpInside" id="V7k-5C-Jat"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="enE-5H-hK6">
+                                        <rect key="frame" x="0.0" y="348" width="275" height="27"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="  Saved Searches" image="search (2) 1-2"/>
+                                        <connections>
+                                            <action selector="savedSearchBtn:" destination="6dW-PF-HGy" eventType="touchUpInside" id="EYm-kW-CyQ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aOv-ys-Wo7" customClass="WTGIButton" customModule="Where2Go" customModuleProvider="target">
+                                <rect key="frame" x="98.333333333333329" y="738" width="196.33333333333337" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="a1b-F5-L0v"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Logout"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qxM-30-wun"/>
+                        <color key="backgroundColor" red="0.12549019607843137" green="0.22745098039215686" blue="0.12941176470588234" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qxM-30-wun" firstAttribute="trailing" secondItem="CnH-fA-Q76" secondAttribute="trailing" id="1za-vi-BoD"/>
+                            <constraint firstItem="aOv-ys-Wo7" firstAttribute="centerX" secondItem="l43-Bb-G0j" secondAttribute="centerX" id="44e-rO-lqx"/>
+                            <constraint firstItem="qxM-30-wun" firstAttribute="bottom" secondItem="aOv-ys-Wo7" secondAttribute="bottom" constant="30" id="50Q-fj-73A"/>
+                            <constraint firstItem="FU9-8L-ZhN" firstAttribute="centerX" secondItem="l43-Bb-G0j" secondAttribute="centerX" id="dhE-XC-8bA"/>
+                            <constraint firstItem="FU9-8L-ZhN" firstAttribute="top" secondItem="qxM-30-wun" secondAttribute="top" constant="90" id="dwG-EU-Acv"/>
+                            <constraint firstItem="CnH-fA-Q76" firstAttribute="top" secondItem="qxM-30-wun" secondAttribute="top" id="ivb-XN-nkT"/>
+                            <constraint firstItem="aOv-ys-Wo7" firstAttribute="width" secondItem="l43-Bb-G0j" secondAttribute="width" multiplier="0.5" id="jk5-OZ-e9C"/>
+                            <constraint firstItem="FU9-8L-ZhN" firstAttribute="width" secondItem="l43-Bb-G0j" secondAttribute="width" multiplier="0.7" id="kqB-5f-PO9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="TyH-EO-iwO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Hw-y5-VMR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-18" y="65"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="aOv-ys-Wo7">
+            <size key="intrinsicContentSize" width="48" height="30"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="Vector" width="20.895999908447266" height="25.538999557495117"/>
+        <image name="cafe-svgrepo-com" width="30" height="30"/>
+        <image name="chat-line-svgrepo-com-2" width="26.798999786376953" height="26.798999786376953"/>
+        <image name="close-circle-svgrepo-com" width="26.121999740600586" height="26.121999740600586"/>
+        <image name="food-dinner-svgrepo-com (1)" width="30" height="30"/>
+        <image name="profile-tick-svgrepo-com" width="21.02400016784668" height="28.646999359130859"/>
+        <image name="schedule-svgrepo-com-2" width="28.218999862670898" height="28.406999588012695"/>
+        <image name="search (2) 1-2" width="28" height="27"/>
+    </resources>
+</document>

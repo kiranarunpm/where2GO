@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ChooseTypeCell" customModule="Where2Go" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="305" height="97"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="305" height="97"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DNR-hd-dYY">
+                        <rect key="frame" x="0.0" y="0.0" width="305" height="97"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" title="   Review" image="chat-line-svgrepo-com"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                <integer key="value" value="9"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="ChooseBtn:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Fyd-RL-otd"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="DNR-hd-dYY" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="4Oe-sY-1Nd"/>
+                <constraint firstItem="DNR-hd-dYY" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="80V-Mw-ZFk"/>
+                <constraint firstItem="DNR-hd-dYY" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="CgA-WR-JhH"/>
+                <constraint firstItem="DNR-hd-dYY" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Dtt-Ea-Wl5"/>
+                <constraint firstAttribute="bottom" secondItem="DNR-hd-dYY" secondAttribute="bottom" id="Fu2-bL-2Xm"/>
+                <constraint firstItem="DNR-hd-dYY" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Otc-9J-OtB"/>
+                <constraint firstAttribute="trailing" secondItem="DNR-hd-dYY" secondAttribute="trailing" id="cLN-gS-lPd"/>
+                <constraint firstAttribute="trailing" secondItem="DNR-hd-dYY" secondAttribute="trailing" id="y2N-TS-t0f"/>
+            </constraints>
+            <size key="customSize" width="305" height="97"/>
+            <connections>
+                <outlet property="chooseBtn" destination="DNR-hd-dYY" id="krC-Wm-XhH"/>
+            </connections>
+            <point key="canvasLocation" x="249.61832061068702" y="3.8732394366197185"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="chat-line-svgrepo-com" width="22.708999633789062" height="22.708999633789062"/>
+    </resources>
+</document>

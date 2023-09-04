@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="27" viewBox="0 0 28 27">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="location_1" data-name="location 1" width="28" height="27" transform="translate(-0.307 0.32)" fill="none" style="mix-blend-mode: normal;isolation: isolate"/>
+    </clipPath>
+  </defs>
+  <g id="location_1-2" data-name="location 1" transform="translate(0.307 -0.32)" clip-path="url(#clip-path)" style="mix-blend-mode: normal;isolation: isolate">
+    <rect id="location_1-3" data-name="location 1" width="28" height="27" transform="translate(-0.307 0.32)" fill="none" style="mix-blend-mode: normal;isolation: isolate"/>
+    <g id="Group" transform="translate(2.531 0)" style="mix-blend-mode: normal;isolation: isolate">
+      <path id="Vector" d="M0,5A5,5,0,1,0,5,0,5,5,0,0,0,0,5ZM2.5,5A2.5,2.5,0,1,1,5,7.494,2.5,2.5,0,0,1,2.5,5Z" transform="translate(6.233 6.288)" fill="#04764e" style="mix-blend-mode: normal;isolation: isolate"/>
+      <path id="Vector-2" data-name="Vector" d="M11.26,0A11.229,11.229,0,0,0,0,11.2a17.422,17.422,0,0,0,10.708,16.21,1.249,1.249,0,0,0,.52.111,1.263,1.263,0,0,0,.523-.112A17.419,17.419,0,0,0,22.458,11.259,11.229,11.229,0,0,0,11.26,0ZM2.5,11.284a8.732,8.732,0,0,1,17.465,0v.081A14.613,14.613,0,0,1,11.228,24.9,14.629,14.629,0,0,1,2.5,11.284Z" transform="translate(0 0)" fill="#04764e" style="mix-blend-mode: normal;isolation: isolate"/>
+    </g>
+  </g>
+</svg>

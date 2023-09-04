@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="28" viewBox="0 0 28 28">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="ic_eye" width="28" height="28" transform="translate(-0.293 0.013)" fill="none" style="mix-blend-mode: normal;isolation: isolate"/>
+    </clipPath>
+  </defs>
+  <g id="ic_eye-2" data-name="ic_eye" transform="translate(0.293 -0.013)" clip-path="url(#clip-path)" style="mix-blend-mode: normal;isolation: isolate">
+    <rect id="ic_eye-3" data-name="ic_eye" width="28" height="28" transform="translate(-0.293 0.013)" fill="none" style="mix-blend-mode: normal;isolation: isolate"/>
+    <path id="Vector" d="M.071,8.777a1.139,1.139,0,0,0,0,.793c1.962,5.337,6.435,8.777,11.4,8.777s9.434-3.44,11.4-8.777a1.138,1.138,0,0,0,0-.793C20.9,3.446,16.427,0,11.467,0S2.033,3.446.071,8.777Zm2.3.4C4.07,4.98,7.6,2.293,11.467,2.293s7.4,2.687,9.091,6.88c-1.694,4.193-5.222,6.88-9.091,6.88S4.07,13.367,2.376,9.173Z" transform="translate(2.293 4.587)" fill="#04764e" style="mix-blend-mode: normal;isolation: isolate"/>
+    <path id="Vector-2" data-name="Vector" d="M2.038.773A4.587,4.587,0,1,0,4.587,0,4.587,4.587,0,0,0,2.038.773ZM3.313,6.494a2.293,2.293,0,1,1,1.274.386A2.293,2.293,0,0,1,3.313,6.494Z" transform="translate(9.173 9.173)" fill="#04764e" style="mix-blend-mode: normal;isolation: isolate"/>
+  </g>
+</svg>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoryCell" id="gTV-IL-0wX" customClass="CategoryCell" customModule="Where2Go" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="145" height="47"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="145" height="47"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trending Cafes" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="383-TJ-SdI" customClass="WTGLabel" customModule="Where2Go" customModuleProvider="target">
+                        <rect key="frame" x="15" y="13.999999999999998" width="115" height="19.333333333333329"/>
+                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                <real key="value" value="16"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                <integer key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="fontStyle">
+                                <integer key="value" value="0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="383-TJ-SdI" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="1gh-TD-yDe"/>
+                <constraint firstAttribute="trailing" secondItem="383-TJ-SdI" secondAttribute="trailing" constant="15" id="LEA-w0-ctu"/>
+                <constraint firstItem="383-TJ-SdI" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="SD0-dy-yGE"/>
+                <constraint firstItem="383-TJ-SdI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="p9A-H4-HeB"/>
+            </constraints>
+            <size key="customSize" width="145" height="47"/>
+            <connections>
+                <outlet property="txt" destination="383-TJ-SdI" id="Y8z-0a-cPE"/>
+            </connections>
+            <point key="canvasLocation" x="261.83206106870227" y="18.661971830985916"/>
+        </collectionViewCell>
+    </objects>
+    <designables>
+        <designable name="383-TJ-SdI">
+            <size key="intrinsicContentSize" width="109.66666666666667" height="19.333333333333332"/>
+        </designable>
+    </designables>
+</document>

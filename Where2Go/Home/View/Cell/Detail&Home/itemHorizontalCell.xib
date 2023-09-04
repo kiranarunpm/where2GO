@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="158" id="KGk-i7-Jjw" customClass="itemHorizontalCell" customModule="Where2Go" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="158"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="158"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GhY-oK-c6d">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="158"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O89-mf-Wbq" customClass="R_UIView" customModule="Where2Go" customModuleProvider="target">
+                                <rect key="frame" x="25" y="12.666666666666671" width="115" height="132.66666666666663"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screenshot 2023-08-24 at 12.06.40 AM" translatesAutoresizingMaskIntoConstraints="NO" id="ZPv-5N-OBq">
+                                        <rect key="frame" x="0.0" y="0.0" width="115" height="132.66666666666666"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="ZPv-5N-OBq" firstAttribute="leading" secondItem="O89-mf-Wbq" secondAttribute="leading" id="7cJ-yw-7yU"/>
+                                    <constraint firstItem="ZPv-5N-OBq" firstAttribute="top" secondItem="O89-mf-Wbq" secondAttribute="top" id="93Q-7q-ARY"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZPv-5N-OBq" secondAttribute="trailing" id="9xX-P6-8VH"/>
+                                    <constraint firstAttribute="bottom" secondItem="ZPv-5N-OBq" secondAttribute="bottom" id="Xah-c2-M2n"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q1k-8S-UPH" customClass="WTGIButton" customModule="Where2Go" customModuleProvider="target">
+                                <rect key="frame" x="42.333333333333336" y="130.33333333333334" width="80.666666666666657" height="30"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Join"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="SWG-X7-lg5">
+                                <rect key="frame" x="148" y="22" width="256" height="65.666666666666671"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fast Food &amp; Cafe Convention" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NXm-YV-iUd" customClass="WTGLabel" customModule="Where2Go" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="256" height="21.666666666666668"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                <real key="value" value="18"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                                <integer key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="fontStyle">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wednesday-26 July 2023, 11:22 am" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GWN-pz-TM7" customClass="WTGLabel" customModule="Where2Go" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="26.666666666666664" width="256" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                <real key="value" value="14"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="fontStyle">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="InterContinental Dubai" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AOx-ec-aU5" customClass="WTGLabel" customModule="Where2Go" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="48.666666666666671" width="256" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                <real key="value" value="14"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                                <integer key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="fontStyle">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11/50 Joined" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S3Y-MK-uIV" customClass="WTGLabel" customModule="Where2Go" customModuleProvider="target">
+                                <rect key="frame" x="148" y="118" width="258" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontStyle">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="O89-mf-Wbq" firstAttribute="height" secondItem="GhY-oK-c6d" secondAttribute="height" multiplier="0.84" id="0VP-bm-eqf"/>
+                            <constraint firstItem="O89-mf-Wbq" firstAttribute="centerY" secondItem="GhY-oK-c6d" secondAttribute="centerY" id="6Uw-Bt-D7T"/>
+                            <constraint firstItem="SWG-X7-lg5" firstAttribute="leading" secondItem="O89-mf-Wbq" secondAttribute="trailing" constant="8" symbolic="YES" id="8Rg-xc-RJo"/>
+                            <constraint firstAttribute="trailing" secondItem="S3Y-MK-uIV" secondAttribute="trailing" constant="8" id="9e9-Gi-HgR"/>
+                            <constraint firstItem="O89-mf-Wbq" firstAttribute="width" secondItem="GhY-oK-c6d" secondAttribute="width" multiplier="0.278125" id="DT2-oX-Kk6"/>
+                            <constraint firstAttribute="trailing" secondItem="SWG-X7-lg5" secondAttribute="trailing" constant="10" id="DrL-RB-p7g"/>
+                            <constraint firstAttribute="height" constant="158" id="LVT-Oh-JSN"/>
+                            <constraint firstItem="Q1k-8S-UPH" firstAttribute="centerX" secondItem="ZPv-5N-OBq" secondAttribute="centerX" id="Ta1-GB-ltN"/>
+                            <constraint firstItem="S3Y-MK-uIV" firstAttribute="leading" secondItem="O89-mf-Wbq" secondAttribute="trailing" constant="8" id="Tz5-la-GV5"/>
+                            <constraint firstItem="O89-mf-Wbq" firstAttribute="leading" secondItem="GhY-oK-c6d" secondAttribute="leading" constant="25" id="VSw-g5-1Fo"/>
+                            <constraint firstItem="Q1k-8S-UPH" firstAttribute="width" secondItem="ZPv-5N-OBq" secondAttribute="width" multiplier="0.701449" id="XAw-9e-Uzv"/>
+                            <constraint firstItem="SWG-X7-lg5" firstAttribute="top" secondItem="GhY-oK-c6d" secondAttribute="top" constant="22" id="e61-3M-zVI"/>
+                            <constraint firstItem="Q1k-8S-UPH" firstAttribute="bottom" secondItem="ZPv-5N-OBq" secondAttribute="bottom" constant="15" id="itK-kT-2hu"/>
+                            <constraint firstAttribute="bottom" secondItem="S3Y-MK-uIV" secondAttribute="bottom" constant="23" id="viK-gk-bfF"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="GhY-oK-c6d" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="DrG-I9-xsX"/>
+                    <constraint firstItem="GhY-oK-c6d" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="YvK-lb-meL"/>
+                    <constraint firstAttribute="bottom" secondItem="GhY-oK-c6d" secondAttribute="bottom" id="jRf-H4-7qp"/>
+                    <constraint firstAttribute="trailing" secondItem="GhY-oK-c6d" secondAttribute="trailing" id="r0f-F3-cG5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="-122.13740458015266" y="35.91549295774648"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="AOx-ec-aU5">
+            <size key="intrinsicContentSize" width="145" height="17"/>
+        </designable>
+        <designable name="GWN-pz-TM7">
+            <size key="intrinsicContentSize" width="230.66666666666666" height="17"/>
+        </designable>
+        <designable name="NXm-YV-iUd">
+            <size key="intrinsicContentSize" width="233.33333333333334" height="21.666666666666668"/>
+        </designable>
+        <designable name="Q1k-8S-UPH">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+        <designable name="S3Y-MK-uIV">
+            <size key="intrinsicContentSize" width="81" height="17"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="Screenshot 2023-08-24 at 12.06.40 AM" width="634" height="642"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

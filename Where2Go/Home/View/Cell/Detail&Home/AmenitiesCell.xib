@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AmenitiesCell" id="gTV-IL-0wX" customClass="AmenitiesCell" customModule="Where2Go" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="163" height="196"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="163" height="196"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d58-Jw-22p">
+                        <rect key="frame" x="0.0" y="0.0" width="163" height="196"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="BJy-q5-sS4">
+                                <rect key="frame" x="34.999999999999993" y="67" width="93.333333333333314" height="62"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 2476" translatesAutoresizingMaskIntoConstraints="NO" id="wxL-x0-OLI">
+                                        <rect key="frame" x="29" y="0.0" width="35" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="7Nv-As-GTC"/>
+                                            <constraint firstAttribute="width" constant="35" id="F0F-6z-KuC"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meeting Room" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TpA-5O-IAI" customClass="WTGLabel" customModule="Where2Go" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="45" width="93.333333333333329" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                <real key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                                <integer key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="fontStyle">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BJy-q5-sS4" firstAttribute="width" secondItem="d58-Jw-22p" secondAttribute="width" multiplier="0.572597" id="Td5-o1-baW"/>
+                            <constraint firstItem="BJy-q5-sS4" firstAttribute="centerX" secondItem="d58-Jw-22p" secondAttribute="centerX" id="Ufb-Ah-Tcn"/>
+                            <constraint firstItem="BJy-q5-sS4" firstAttribute="centerY" secondItem="d58-Jw-22p" secondAttribute="centerY" id="eu9-ug-Zwk"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="d58-Jw-22p" secondAttribute="trailing" id="0BU-Hm-NJq"/>
+                <constraint firstAttribute="bottom" secondItem="d58-Jw-22p" secondAttribute="bottom" id="CkA-qf-hDX"/>
+                <constraint firstItem="d58-Jw-22p" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="E8E-q8-37d"/>
+                <constraint firstItem="d58-Jw-22p" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Zei-HR-bCO"/>
+            </constraints>
+            <size key="customSize" width="163" height="196"/>
+            <point key="canvasLocation" x="135.1145038167939" y="71.126760563380287"/>
+        </collectionViewCell>
+    </objects>
+    <designables>
+        <designable name="TpA-5O-IAI">
+            <size key="intrinsicContentSize" width="93.333333333333329" height="17"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="Group 2476" width="29" height="26"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

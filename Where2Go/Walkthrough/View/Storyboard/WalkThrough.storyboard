@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Walk ThroughVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="WalkThroughVC" id="Y6W-OH-hqX" customClass="WalkThroughVC" customModule="Where2Go" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Le5-h7-tJz">
+                                <rect key="frame" x="0.0" y="59" width="393" height="613.33333333333337"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="9Ir-Zv-wk4">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="bsQ-HH-R8O" customClass="CustomPageControl" customModule="Where2Go" customModuleProvider="target">
+                                <rect key="frame" x="147.33333333333334" y="690" width="98.666666666666657" height="26"/>
+                                <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="currentPageIndicatorTintColor" name="secondaryColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="currentPageImage" value="Shape 1"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="otherPagesImage" value="Shape 2"/>
+                                </userDefinedRuntimeAttributes>
+                            </pageControl>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="PTB-Xm-dZy">
+                                <rect key="frame" x="39.333333333333343" y="733" width="314.33333333333326" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rEK-zH-Hsq" customClass="WTGIButton" customModule="Where2Go" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="153.33333333333334" height="60"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="BACK"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                                <integer key="value" value="0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6UC-n7-CPO" customClass="WTGIButton" customModule="Where2Go" customModuleProvider="target">
+                                        <rect key="frame" x="161.33333333333331" y="0.0" width="153" height="60"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="NEXT"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="nextbtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="GBC-Yt-5bj"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dg0-zw-Duj" customClass="WTGIButton" customModule="Where2Go" customModuleProvider="target">
+                                        <rect key="frame" x="314.33333333333337" y="0.0" width="0.0" height="60"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="GET STARTED!"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="getStartedBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="6lh-SV-J3E"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="2ra-Ja-hoQ"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bsQ-HH-R8O" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="4ny-tQ-dnR"/>
+                            <constraint firstItem="bsQ-HH-R8O" firstAttribute="top" secondItem="Le5-h7-tJz" secondAttribute="bottom" constant="17.670000000000002" id="94b-zL-wBA"/>
+                            <constraint firstItem="Le5-h7-tJz" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.72" id="HKH-gn-e4h"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="PTB-Xm-dZy" secondAttribute="bottom" constant="25" id="KOP-Wl-4Lm"/>
+                            <constraint firstItem="Le5-h7-tJz" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="TH5-7v-N2K"/>
+                            <constraint firstItem="Le5-h7-tJz" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="ZF1-T7-Hnh"/>
+                            <constraint firstItem="PTB-Xm-dZy" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="bC9-y1-YI1"/>
+                            <constraint firstItem="PTB-Xm-dZy" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.8" id="hDs-zM-wfs"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Le5-h7-tJz" secondAttribute="trailing" id="zhS-wN-F2N"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backBtn" destination="rEK-zH-Hsq" id="7dT-hI-CIi"/>
+                        <outlet property="colView" destination="Le5-h7-tJz" id="uyv-DW-dFY"/>
+                        <outlet property="dotView" destination="bsQ-HH-R8O" id="KtD-Sa-8ll"/>
+                        <outlet property="nextBtn" destination="6UC-n7-CPO" id="BpK-Fc-zzC"/>
+                        <outlet property="startBtn" destination="dg0-zw-Duj" id="Gtx-Kr-xLC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-8.3969465648854964" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="6UC-n7-CPO">
+            <size key="intrinsicContentSize" width="39" height="30"/>
+        </designable>
+        <designable name="dg0-zw-Duj">
+            <size key="intrinsicContentSize" width="103" height="30"/>
+        </designable>
+        <designable name="rEK-zH-Hsq">
+            <size key="intrinsicContentSize" width="40" height="30"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="Shape 1" width="22" height="5"/>
+        <image name="Shape 2" width="5" height="5"/>
+        <namedColor name="secondaryColor">
+            <color red="0.92900002002716064" green="0.81599998474121094" blue="0.53700000047683716" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GuestHeaderCell" customModule="Where2Go" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="183"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 2806" translatesAutoresizingMaskIntoConstraints="NO" id="xTd-Gr-ReE">
+                    <rect key="frame" x="25" y="59.666666666666657" width="40" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="b6a-cM-K1f"/>
+                        <constraint firstAttribute="width" constant="40" id="mzk-1N-tBa"/>
+                    </constraints>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="AAw-Jm-qtK">
+                    <rect key="frame" x="307" y="15" width="71" height="119"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="22" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hj9-rJ-Abq" customClass="WTGLabel" customModule="Where2Go" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="21" height="119"/>
+                            <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                    <real key="value" value="16"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                    <integer key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="fontStyle">
+                                    <integer key="value" value="0"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w1N-MK-TUw">
+                            <rect key="frame" x="41" y="0.0" width="30" height="119"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="down-arrow-5-svgrepo-com"/>
+                            <connections>
+                                <action selector="collapseBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="XpE-r3-32q"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="India" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="laz-lj-6tR" customClass="WTGLabel" customModule="Where2Go" customModuleProvider="target">
+                    <rect key="frame" x="85" y="63.666666666666664" width="38.666666666666657" height="21.666666666666664"/>
+                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                            <real key="value" value="17"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="style">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="fontStyle">
+                            <integer key="value" value="0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="AAw-Jm-qtK" secondAttribute="trailing" constant="15" id="2zd-O7-jPR"/>
+                <constraint firstItem="AAw-Jm-qtK" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="3dk-iN-HU6"/>
+                <constraint firstItem="laz-lj-6tR" firstAttribute="centerY" secondItem="xTd-Gr-ReE" secondAttribute="centerY" id="4l0-pK-Ppf"/>
+                <constraint firstItem="xTd-Gr-ReE" firstAttribute="centerY" secondItem="AAw-Jm-qtK" secondAttribute="centerY" id="HaN-FQ-20d"/>
+                <constraint firstItem="laz-lj-6tR" firstAttribute="leading" secondItem="xTd-Gr-ReE" secondAttribute="trailing" constant="20" id="dL9-yX-eUW"/>
+                <constraint firstItem="AAw-Jm-qtK" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="eTS-ka-RlZ"/>
+                <constraint firstItem="xTd-Gr-ReE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="25" id="iuf-lP-6Dj"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="AAw-Jm-qtK" secondAttribute="bottom" constant="15" id="uZt-Xd-tka"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="collapseBtn" destination="w1N-MK-TUw" id="zsq-Rp-Aw7"/>
+                <outlet property="countryName" destination="laz-lj-6tR" id="715-yx-aam"/>
+            </connections>
+            <point key="canvasLocation" x="32.824427480916029" y="375"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="Hj9-rJ-Abq">
+            <size key="intrinsicContentSize" width="21" height="21.666666666666668"/>
+        </designable>
+        <designable name="laz-lj-6tR">
+            <size key="intrinsicContentSize" width="38.666666666666664" height="21.666666666666668"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="Group 2806" width="33.562999725341797" height="19.583000183105469"/>
+        <image name="down-arrow-5-svgrepo-com" width="30" height="30"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

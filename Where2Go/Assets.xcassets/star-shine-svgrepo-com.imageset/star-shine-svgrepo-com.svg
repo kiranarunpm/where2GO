@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24.379" height="24.379" viewBox="0 0 24.379 24.379">
+  <g id="star-shine-svgrepo-com" transform="translate(0.75 0.75)">
+    <path id="Path_1639" data-name="Path 1639" d="M12,2V4.288" transform="translate(-0.56 -2)" fill="none" stroke="#edd089" stroke-linecap="round" stroke-width="1.5"/>
+    <path id="Path_1640" data-name="Path 1640" d="M12,20v2.288" transform="translate(-0.56 0.591)" fill="none" stroke="#edd089" stroke-linecap="round" stroke-width="1.5"/>
+    <path id="Path_1641" data-name="Path 1641" d="M2,12H4.288" transform="translate(-2 -0.56)" fill="none" stroke="#edd089" stroke-linecap="round" stroke-width="1.5"/>
+    <path id="Path_1642" data-name="Path 1642" d="M20,12h2.288" transform="translate(0.591 -0.56)" fill="none" stroke="#edd089" stroke-linecap="round" stroke-width="1.5"/>
+    <path id="Path_1643" data-name="Path 1643" d="M6,18.049l.392-.392" transform="translate(-1.424 0.254)" fill="none" stroke="#edd089" stroke-linecap="round" stroke-width="1.5"/>
+    <path id="Path_1644" data-name="Path 1644" d="M17.657,6.393,18.049,6" transform="translate(0.254 -1.424)" fill="none" stroke="#edd089" stroke-linecap="round" stroke-width="1.5"/>
+    <path id="Path_1645" data-name="Path 1645" d="M18.049,18.049l-.392-.392" transform="translate(0.254 0.254)" fill="none" stroke="#edd089" stroke-linecap="round" stroke-width="1.5"/>
+    <path id="Path_1646" data-name="Path 1646" d="M6.393,6.393,6,6" transform="translate(-1.424 -1.424)" fill="none" stroke="#edd089" stroke-linecap="round" stroke-width="1.5"/>
+    <path id="Path_1647" data-name="Path 1647" d="M16.455,15.725c.145,1.5.217,2.245-.221,2.577s-1.1.029-2.414-.577l-.341-.157a1.953,1.953,0,0,0-.76-.259,1.953,1.953,0,0,0-.76.259l-.341.157c-1.317.607-1.976.91-2.414.577s-.366-1.081-.221-2.577l.038-.387a2.2,2.2,0,0,0,0-.835,2.1,2.1,0,0,0-.47-.675l-.248-.29c-.959-1.122-1.439-1.682-1.271-2.221.121-.39.524-.581,1.271-.778m2.787-1.59C11.816,7.65,12.178,7,12.72,7s.9.65,1.628,1.95l.187.336A2.1,2.1,0,0,0,15,9.962a1.956,1.956,0,0,0,.76.258l.364.082c1.407.318,2.11.477,2.278,1.016.121.388-.1.788-.585,1.4" transform="translate(-1.28 -1.28)" fill="none" stroke="#edd089" stroke-linecap="round" stroke-width="1.5"/>
+  </g>
+</svg>

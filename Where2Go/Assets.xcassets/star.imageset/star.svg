@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32.107" height="32.107" viewBox="0 0 32.107 32.107">
+  <g id="star" style="mix-blend-mode: normal;isolation: isolate">
+    <path id="background" d="M0,16.053A16.053,16.053,0,1,1,16.053,32.107,16.053,16.053,0,0,1,0,16.053Z" fill="#e3b03c" style="mix-blend-mode: normal;isolation: isolate"/>
+    <path id="star-2" data-name="star" d="M10.181,3.859a.768.768,0,0,0,.58.4l3.99.553a.726.726,0,0,1,.426,1.252L12.29,8.75a.713.713,0,0,0-.221.65l.682,3.79a.764.764,0,0,1-1.117.775l-3.569-1.79a.8.8,0,0,0-.716,0l-3.571,1.79A.763.763,0,0,1,2.66,13.19L3.342,9.4a.713.713,0,0,0-.221-.65L.233,6.066A.726.726,0,0,1,.66,4.814L4.65,4.26a.771.771,0,0,0,.58-.4L7.015.41A.787.787,0,0,1,8.4.41Z" transform="translate(8.348 8.99)" fill="#fff" style="mix-blend-mode: normal;isolation: isolate"/>
+  </g>
+</svg>

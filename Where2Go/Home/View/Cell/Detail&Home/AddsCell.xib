@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="AddsCell" customModule="Where2Go" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="260" height="191"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="260" height="191"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C4D-de-0UF" customClass="R_UIView" customModule="Where2Go" customModuleProvider="target">
+                        <rect key="frame" x="10" y="10" width="240" height="171"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image-3" translatesAutoresizingMaskIntoConstraints="NO" id="fQm-mp-PVm">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="171"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fQm-mp-PVm" firstAttribute="leading" secondItem="C4D-de-0UF" secondAttribute="leading" id="C9S-fB-0x2"/>
+                            <constraint firstAttribute="bottom" secondItem="fQm-mp-PVm" secondAttribute="bottom" id="GOL-Pr-8Bj"/>
+                            <constraint firstItem="fQm-mp-PVm" firstAttribute="top" secondItem="C4D-de-0UF" secondAttribute="top" id="Jwk-wu-xtE"/>
+                            <constraint firstAttribute="trailing" secondItem="fQm-mp-PVm" secondAttribute="trailing" id="fmI-N8-lTg"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="C4D-de-0UF" secondAttribute="trailing" constant="10" id="5im-FY-4Uf"/>
+                <constraint firstItem="C4D-de-0UF" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="APt-Co-Zpk"/>
+                <constraint firstItem="C4D-de-0UF" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="Nxe-VN-9re"/>
+                <constraint firstAttribute="bottom" secondItem="C4D-de-0UF" secondAttribute="bottom" constant="10" id="tZy-Bw-LqK"/>
+            </constraints>
+            <size key="customSize" width="260" height="191"/>
+            <point key="canvasLocation" x="290.07633587786256" y="36.971830985915496"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="image-3" width="400" height="300"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

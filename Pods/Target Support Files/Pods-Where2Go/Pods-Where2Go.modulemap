@@ -1,0 +1,6 @@
+framework module Pods_Where2Go {
+  umbrella header "Pods-Where2Go-umbrella.h"
+
+  export *
+  module * { export * }
+}
