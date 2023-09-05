@@ -73,6 +73,15 @@
 		9F65E4952A9B723800370C7D /* HeaderChatCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F65E4942A9B723800370C7D /* HeaderChatCell.xib */; };
 		9F65E4982A9B782F00370C7D /* ChatReplayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F65E4962A9B782F00370C7D /* ChatReplayCell.swift */; };
 		9F65E4992A9B782F00370C7D /* ChatReplayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F65E4972A9B782F00370C7D /* ChatReplayCell.xib */; };
+		9F74B2E62AA79639000A7068 /* CafeFilterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F74B2E52AA79639000A7068 /* CafeFilterVC.swift */; };
+		9F74B2ED2AA7984F000A7068 /* FilterHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F74B2EC2AA7984F000A7068 /* FilterHeaderCell.swift */; };
+		9F74B2F12AA798BE000A7068 /* FilterHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F74B2F02AA798BE000A7068 /* FilterHeaderCell.xib */; };
+		9F74B2F62AA79C8E000A7068 /* YearSelectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F74B2F42AA79C8E000A7068 /* YearSelectCell.swift */; };
+		9F74B2F72AA79C8E000A7068 /* YearSelectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F74B2F52AA79C8E000A7068 /* YearSelectCell.xib */; };
+		9F74B2FA2AA79F91000A7068 /* MultiselectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F74B2F82AA79F91000A7068 /* MultiselectCell.swift */; };
+		9F74B2FB2AA79F91000A7068 /* MultiselectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F74B2F92AA79F91000A7068 /* MultiselectCell.xib */; };
+		9F74B2FE2AA7A108000A7068 /* SingleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F74B2FC2AA7A108000A7068 /* SingleCell.swift */; };
+		9F74B2FF2AA7A108000A7068 /* SingleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F74B2FD2AA7A108000A7068 /* SingleCell.xib */; };
 		9F86F66A2A9732A700747D2E /* HomeHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F86F6682A9732A700747D2E /* HomeHeaderCell.swift */; };
 		9F86F66B2A9732A700747D2E /* HomeHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F86F6692A9732A700747D2E /* HomeHeaderCell.xib */; };
 		9F86F66E2A97362100747D2E /* SwitchEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F86F66C2A97362100747D2E /* SwitchEvent.swift */; };
@@ -180,6 +189,15 @@
 		9F65E4942A9B723800370C7D /* HeaderChatCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderChatCell.xib; sourceTree = "<group>"; };
 		9F65E4962A9B782F00370C7D /* ChatReplayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatReplayCell.swift; sourceTree = "<group>"; };
 		9F65E4972A9B782F00370C7D /* ChatReplayCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatReplayCell.xib; sourceTree = "<group>"; };
+		9F74B2E52AA79639000A7068 /* CafeFilterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeFilterVC.swift; sourceTree = "<group>"; };
+		9F74B2EC2AA7984F000A7068 /* FilterHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterHeaderCell.swift; sourceTree = "<group>"; };
+		9F74B2F02AA798BE000A7068 /* FilterHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterHeaderCell.xib; sourceTree = "<group>"; };
+		9F74B2F42AA79C8E000A7068 /* YearSelectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearSelectCell.swift; sourceTree = "<group>"; };
+		9F74B2F52AA79C8E000A7068 /* YearSelectCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YearSelectCell.xib; sourceTree = "<group>"; };
+		9F74B2F82AA79F91000A7068 /* MultiselectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiselectCell.swift; sourceTree = "<group>"; };
+		9F74B2F92AA79F91000A7068 /* MultiselectCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MultiselectCell.xib; sourceTree = "<group>"; };
+		9F74B2FC2AA7A108000A7068 /* SingleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleCell.swift; sourceTree = "<group>"; };
+		9F74B2FD2AA7A108000A7068 /* SingleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SingleCell.xib; sourceTree = "<group>"; };
 		9F86F6682A9732A700747D2E /* HomeHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderCell.swift; sourceTree = "<group>"; };
 		9F86F6692A9732A700747D2E /* HomeHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeHeaderCell.xib; sourceTree = "<group>"; };
 		9F86F66C2A97362100747D2E /* SwitchEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchEvent.swift; sourceTree = "<group>"; };
@@ -485,6 +503,21 @@
 			path = CustomView;
 			sourceTree = "<group>";
 		};
+		9F74B2EB2AA7973E000A7068 /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				9F74B2EC2AA7984F000A7068 /* FilterHeaderCell.swift */,
+				9F74B2F02AA798BE000A7068 /* FilterHeaderCell.xib */,
+				9F74B2F42AA79C8E000A7068 /* YearSelectCell.swift */,
+				9F74B2F52AA79C8E000A7068 /* YearSelectCell.xib */,
+				9F74B2F82AA79F91000A7068 /* MultiselectCell.swift */,
+				9F74B2F92AA79F91000A7068 /* MultiselectCell.xib */,
+				9F74B2FC2AA7A108000A7068 /* SingleCell.swift */,
+				9F74B2FD2AA7A108000A7068 /* SingleCell.xib */,
+			);
+			path = Filter;
+			sourceTree = "<group>";
+		};
 		9F87EA4A2AA3A1F000CC5988 /* SideMenu */ = {
 			isa = PBXGroup;
 			children = (
@@ -545,6 +578,7 @@
 				9FC21F5F2AA6347C00856D57 /* SavedSearchVc.swift */,
 				9FC21F652AA6380F00856D57 /* PersonProfileVC.swift */,
 				9FC21F672AA64AAE00856D57 /* ListingVC.swift */,
+				9F74B2E52AA79639000A7068 /* CafeFilterVC.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -585,6 +619,7 @@
 		9F8DBA452A93D1A100E7A0DC /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				9F74B2EB2AA7973E000A7068 /* Filter */,
 				9F582D582AA3012B00D732F2 /* Chat */,
 				9F582D572AA3010200D732F2 /* Detail&Home */,
 				9FAA50F32A9E619400614A58 /* Guest */,
@@ -678,11 +713,13 @@
 				9F1411722A8E8B2000FF7B3D /* Authentication.storyboard in Resources */,
 				9F5B2D512A8B44440043F330 /* Montserrat-Bold.ttf in Resources */,
 				9F0544282A9685DE008747EB /* ItemCell.xib in Resources */,
+				9F74B2FF2AA7A108000A7068 /* SingleCell.xib in Resources */,
 				9F8DBA472A93D2A900E7A0DC /* Home.storyboard in Resources */,
 				9F65E4952A9B723800370C7D /* HeaderChatCell.xib in Resources */,
 				9F3455592A97B0B7002455DF /* AmenitiesCell.xib in Resources */,
 				9F5B2D522A8B44440043F330 /* Montserrat-ExtraBold.ttf in Resources */,
 				9F86F66B2A9732A700747D2E /* HomeHeaderCell.xib in Resources */,
+				9F74B2F12AA798BE000A7068 /* FilterHeaderCell.xib in Resources */,
 				9F1ED02C2A99F98000693FDB /* DetailChatCell.xib in Resources */,
 				9FC21F5E2AA62E9200856D57 /* BookMarkCell.xib in Resources */,
 				9FAA50F72A9E61EA00614A58 /* GuestHeaderCell.xib in Resources */,
@@ -700,6 +737,7 @@
 				9F18B00B2A9D228D00508FE5 /* CategoryCell.xib in Resources */,
 				9F87EA4E2AA3A21700CC5988 /* DrawerMenu.storyboard in Resources */,
 				9F582D612AA307C000D732F2 /* ChatBubbleRight.xib in Resources */,
+				9F74B2F72AA79C8E000A7068 /* YearSelectCell.xib in Resources */,
 				9F25B9062AA3320E0091B995 /* ChatHistoryCell.xib in Resources */,
 				9F5B2D562A8B44440043F330 /* Montserrat-SemiBold.ttf in Resources */,
 				9F5B2D412A8B3EB90043F330 /* LaunchScreen.storyboard in Resources */,
@@ -708,6 +746,7 @@
 				9F86F6732A9739F900747D2E /* itemHorizontalCell.xib in Resources */,
 				9F582D602AA307C000D732F2 /* ChatBubbleLeft.xib in Resources */,
 				9F160ACE2A99D242006D22D1 /* AddsCell.xib in Resources */,
+				9F74B2FB2AA79F91000A7068 /* MultiselectCell.xib in Resources */,
 				9F582D542AA2F5C500D732F2 /* GuestRowCell.xib in Resources */,
 				9F5B2D392A8B3EB80043F330 /* Main.storyboard in Resources */,
 			);
@@ -790,6 +829,7 @@
 				9F43960F2A9DB82A00DDF501 /* MenuCell.swift in Sources */,
 				9F884C5C2AA47E31006A84D1 /* Constant.swift in Sources */,
 				9F1943A32A8F7D630058CDCC /* UploadImageVC.swift in Sources */,
+				9F74B2FA2AA79F91000A7068 /* MultiselectCell.swift in Sources */,
 				9FAA50F22A9E5FE600614A58 /* GuestVC.swift in Sources */,
 				9F5B2D5E2A8B50B70043F330 /* UIColor+Extension.swift in Sources */,
 				9FE6ABAD2A927F48007337B5 /* VerificationVC.swift in Sources */,
@@ -798,12 +838,15 @@
 				9F5B2D3C2A8B3EB80043F330 /* Where2Go.xcdatamodeld in Sources */,
 				9F14116A2A8E677C00FF7B3D /* CustomPageControl.swift in Sources */,
 				9F160AD12A99DC47006D22D1 /* ChooseTypeCell.swift in Sources */,
+				9F74B2F62AA79C8E000A7068 /* YearSelectCell.swift in Sources */,
 				9F1ED02B2A99F98000693FDB /* DetailChatCell.swift in Sources */,
 				9F884C5E2AA487D4006A84D1 /* PrivacyVC.swift in Sources */,
 				9F160ACD2A99D242006D22D1 /* AddsCell.swift in Sources */,
+				9F74B2ED2AA7984F000A7068 /* FilterHeaderCell.swift in Sources */,
 				9F65E4932A9B722A00370C7D /* HeaderChatCell.swift in Sources */,
 				9F582D562AA2FA3600D732F2 /* GuestModel.swift in Sources */,
 				9F3455582A97B0B7002455DF /* AmenitiesCell.swift in Sources */,
+				9F74B2E62AA79639000A7068 /* CafeFilterVC.swift in Sources */,
 				9F582D5A2AA3013F00D732F2 /* ChatVC.swift in Sources */,
 				9F582D532AA2F5C500D732F2 /* GuestRowCell.swift in Sources */,
 				9F65E4982A9B782F00370C7D /* ChatReplayCell.swift in Sources */,
@@ -811,6 +854,7 @@
 				9FC21F682AA64AAE00856D57 /* ListingVC.swift in Sources */,
 				9FD8C99E2A9E10E0002F44D1 /* EventDetailVC.swift in Sources */,
 				9F8DBA4D2A93D36100E7A0DC /* HomeWidgetCell.swift in Sources */,
+				9F74B2FE2AA7A108000A7068 /* SingleCell.swift in Sources */,
 				9F5B2D5C2A8B4FED0043F330 /* WTGLabel.swift in Sources */,
 				9FC21F5A2AA62DB900856D57 /* BookmarkVC.swift in Sources */,
 				9F4396142A9DD4B200DDF501 /* PresentationController.swift in Sources */,

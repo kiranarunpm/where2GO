@@ -14,6 +14,64 @@
         </array>
     </customFonts>
     <scenes>
+        <!--Cafe FilterVC-->
+        <scene sceneID="IXG-Cy-zRl">
+            <objects>
+                <viewController storyboardIdentifier="CafeFilterVC" id="Nr8-Zz-dyz" customClass="CafeFilterVC" customModule="Where2Go" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DDJ-wk-W6h">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cafes Filters" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YGz-mk-uRQ" customClass="WTGLabel" customModule="Where2Go" customModuleProvider="target">
+                                <rect key="frame" x="24.999999999999993" y="79" width="108.33333333333331" height="24"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontStyle">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fAh-hm-HQ3">
+                                <rect key="frame" x="332" y="74" width="36" height="34"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Clear"/>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="mmD-tM-noh">
+                                <rect key="frame" x="0.0" y="128" width="393" height="690"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Cby-Qk-9X8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mmD-tM-noh" firstAttribute="leading" secondItem="Cby-Qk-9X8" secondAttribute="leading" id="2io-3t-wzY"/>
+                            <constraint firstItem="Cby-Qk-9X8" firstAttribute="trailing" secondItem="fAh-hm-HQ3" secondAttribute="trailing" constant="25" id="4uL-oE-NGj"/>
+                            <constraint firstItem="YGz-mk-uRQ" firstAttribute="top" secondItem="Cby-Qk-9X8" secondAttribute="top" constant="20" id="CTC-r8-vS0"/>
+                            <constraint firstItem="Cby-Qk-9X8" firstAttribute="trailing" secondItem="mmD-tM-noh" secondAttribute="trailing" id="FvI-5K-riZ"/>
+                            <constraint firstItem="mmD-tM-noh" firstAttribute="top" secondItem="YGz-mk-uRQ" secondAttribute="bottom" constant="25" id="XBr-ar-EaS"/>
+                            <constraint firstItem="fAh-hm-HQ3" firstAttribute="top" secondItem="Cby-Qk-9X8" secondAttribute="top" constant="15" id="Zp5-PF-qaw"/>
+                            <constraint firstItem="YGz-mk-uRQ" firstAttribute="leading" secondItem="Cby-Qk-9X8" secondAttribute="leading" constant="25" id="adw-UX-198"/>
+                            <constraint firstItem="fAh-hm-HQ3" firstAttribute="centerY" secondItem="YGz-mk-uRQ" secondAttribute="centerY" id="xib-Y0-AEX"/>
+                            <constraint firstItem="Cby-Qk-9X8" firstAttribute="bottom" secondItem="mmD-tM-noh" secondAttribute="bottom" id="yWL-7U-W8a"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="mmD-tM-noh" id="Tdu-g1-9AG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sk0-hW-2VD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5011" y="-1424"/>
+        </scene>
         <!--ListingVC-->
         <scene sceneID="Ktg-5l-wcC">
             <objects>
@@ -890,7 +948,7 @@
                                                 <color key="currentPageIndicatorTintColor" name="darkBrownColor"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="image" keyPath="currentPageImage" value="pageControl:wkI-3N-ZqB:value"/>
-                                                    <userDefinedRuntimeAttribute type="image" keyPath="otherPagesImage" value="A9913265-4942-4A4D-82E5-9370C445D979"/>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="otherPagesImage" value="F0D8F62C-BD3D-42C7-8D08-D1DF721BCD8B"/>
                                                 </userDefinedRuntimeAttributes>
                                             </pageControl>
                                         </subviews>
@@ -3418,6 +3476,9 @@
         <designable name="Y3L-iY-rzM">
             <size key="intrinsicContentSize" width="79.333333333333329" height="28.666666666666668"/>
         </designable>
+        <designable name="YGz-mk-uRQ">
+            <size key="intrinsicContentSize" width="108.33333333333333" height="24"/>
+        </designable>
         <designable name="beF-Gx-OO7">
             <size key="intrinsicContentSize" width="192.33333333333334" height="26.333333333333332"/>
         </designable>
@@ -3513,7 +3574,7 @@
         </designable>
     </designables>
     <resources>
-        <image name="A9913265-4942-4A4D-82E5-9370C445D979" width="5" height="5">
+        <image name="F0D8F62C-BD3D-42C7-8D08-D1DF721BCD8B" width="5" height="5">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMSAAGGoF8QD05T
 S2V5ZWRBcmNoaXZlctEICVRyb290gAGvEBcLDBkaIRQmKywzNjs+P0RHSEtVXV5iZVUkbnVsbNYNDg8Q

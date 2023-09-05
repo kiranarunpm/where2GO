@@ -33,7 +33,7 @@ class RootVC: UINavigationController{
                 storyboard.navigationController?.navigationBar.isHidden = true
                 return rootNC
             }else{
-                let storyboard = HomeVC.instantiate(fromAppStoryboard: .Home)
+                let storyboard = CafeFilterVC.instantiate(fromAppStoryboard: .Home)
                 let rootNC = UINavigationController(rootViewController: storyboard)
                 storyboard.navigationController?.navigationBar.isHidden = true
                 return rootNC
