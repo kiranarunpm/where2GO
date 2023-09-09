@@ -32,6 +32,7 @@
             </constraints>
             <size key="customSize" width="200" height="55"/>
             <connections>
+                <outlet property="btn" destination="ctM-Oo-g09" id="Dum-01-853"/>
                 <outlet property="chooseBtn" destination="ctM-Oo-g09" id="B7D-sS-xgd"/>
             </connections>
             <point key="canvasLocation" x="154.19847328244273" y="21.47887323943662"/>

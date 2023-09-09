@@ -557,6 +557,21 @@
                   endingLineNumber = "624"
                   offsetFromSymbolStart = "216">
                </Location>
+               <Location
+                  uuid = "65F5CEFD-9A44-40A6-8C86-4FFC31AF4E4C - a27089a2ea911fcd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Where2Go.itemDetailVC.loadIndex(indexRow: Swift.Int) -&gt; ()"
+                  moduleName = "Where2Go"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kiran/development/Freelance/Where2Go/Where2Go/Home/ViewController/itemDetailVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "631"
+                  endingLineNumber = "631"
+                  offsetFromSymbolStart = "216">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>

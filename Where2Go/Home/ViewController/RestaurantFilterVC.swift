@@ -1,19 +1,20 @@
 //
-//  CafeFilterVC.swift
+//  RestaurantFilterVC.swift
 //  Where2Go
 //
-//  Created by Kiran on 05/09/23.
+//  Created by Kiran on 09/09/23.
 //
 
 import UIKit
 
-class CafeFilterVC: UIViewController {
+class RestaurantFilterVC: UIViewController {
 
-    var headerArr = ["Opening Year", "Capacity","Meeting Room", "Location", "Wedding Catering", "Seating Area"]
+    var headerArr = ["Cuisines", "Opening Year","Capacity", "Meeting Room", "Location", "Wedding Catering", "Seating Area"]
     let meetingRoom = ["Available"]
     let searingArea = ["Indoor", "Outdoor", "Both"]
     let wedingCatering = ["Available"]
-
+    let cuisinesArr = ["Chinese", "Italian", "French", "American", "Indian", "Greek", "European" ]
+    let capacityArr = ["0-20", "20-50", "50-100", "100-200"]
     @IBOutlet weak var tableView: UITableView!{
         didSet{
             tableView.dataSource = self
@@ -28,10 +29,10 @@ class CafeFilterVC: UIViewController {
 
         }
     }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // Do any additional setup after loading the view.
     }
     
     @IBAction func dismissBtn(_ sender: Any) {
@@ -41,7 +42,7 @@ class CafeFilterVC: UIViewController {
 
 }
 
-extension CafeFilterVC: UITableViewDelegate, UITableViewDataSource{
+extension RestaurantFilterVC: UITableViewDelegate, UITableViewDataSource{
     func numberOfSections(in tableView: UITableView) -> Int {
         return headerArr.count
     }
@@ -57,6 +58,12 @@ extension CafeFilterVC: UITableViewDelegate, UITableViewDataSource{
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let index = headerArr[indexPath.section]
+        if index == "Cuisines"{
+            let cell = tableView.dequeueReusableCell(withIdentifier: MultiselectCell.identifire, for: indexPath) as! MultiselectCell
+            cell.arr = cuisinesArr
+            return cell
+            
+        }
         if index == "Opening Year"{
             let cell = tableView.dequeueReusableCell(withIdentifier: YearSelectCell.identifire, for: indexPath) as! YearSelectCell
             return cell
@@ -64,6 +71,7 @@ extension CafeFilterVC: UITableViewDelegate, UITableViewDataSource{
         }
         if index == "Capacity"{
             let cell = tableView.dequeueReusableCell(withIdentifier: MultiselectCell.identifire, for: indexPath) as! MultiselectCell
+            cell.arr = capacityArr
             return cell
             
         }
@@ -75,7 +83,6 @@ extension CafeFilterVC: UITableViewDelegate, UITableViewDataSource{
         }
         if index == "Location"{
             let cell = tableView.dequeueReusableCell(withIdentifier: SearchCell.identifire, for: indexPath) as! SearchCell
-
             return cell
             
         }

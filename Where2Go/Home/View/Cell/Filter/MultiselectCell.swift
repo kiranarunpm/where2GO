@@ -9,7 +9,7 @@ import UIKit
 
 class MultiselectCell: UITableViewCell {
     static var identifire : String = "MultiselectCell"
-
+    var arr = [String]()
     @IBOutlet weak var colView: UICollectionView!{
         didSet{
             colView.delegate = self
@@ -42,11 +42,13 @@ class MultiselectCell: UITableViewCell {
 
 extension MultiselectCell: UICollectionViewDelegate, UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return arr.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SingleCell.identifire, for: indexPath) as! SingleCell
+        let index = arr[indexPath.row]
+        cell.btn.setTitle(index, for: .normal)
         if indexPath.row == 1{
             cell.chooseBtn.layer.backgroundColor = UIColor.secondaryColor.cgColor
             cell.chooseBtn.setTitleColor(UIColor.black, for: .normal)

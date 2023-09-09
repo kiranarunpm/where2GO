@@ -10,6 +10,7 @@ import UIKit
 class SingleCell: UICollectionViewCell {
     static var identifire : String = "SingleCell"
 
+    @IBOutlet weak var btn: UIButton!
     @IBOutlet weak var chooseBtn: UIButton!
     override func awakeFromNib() {
         super.awakeFromNib()

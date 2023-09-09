@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CheckboxCelll" customModule="Where2Go" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="208" height="67"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="208" height="67"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="NSA-St-a1R">
+                        <rect key="frame" x="0.0" y="18.666666666666671" width="208" height="30"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Available" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hrx-Kz-dcj" customClass="WTGLabel" customModule="Where2Go" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="165" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="18"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontStyle">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UOm-i9-ecw">
+                                <rect key="frame" x="178" y="0.0" width="30" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VIb-JN-2R6">
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" red="0.4392156862745098" green="0.4392156862745098" blue="0.4392156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="checkbox-check-svgrepo-com"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="VIb-JN-2R6" firstAttribute="top" secondItem="UOm-i9-ecw" secondAttribute="top" id="AyV-4c-0ff"/>
+                                    <constraint firstAttribute="trailing" secondItem="VIb-JN-2R6" secondAttribute="trailing" id="TaK-h8-DcF"/>
+                                    <constraint firstAttribute="bottom" secondItem="VIb-JN-2R6" secondAttribute="bottom" id="itr-tE-o3g"/>
+                                    <constraint firstItem="VIb-JN-2R6" firstAttribute="leading" secondItem="UOm-i9-ecw" secondAttribute="leading" id="nJC-np-ZT1"/>
+                                    <constraint firstAttribute="width" constant="30" id="xa3-6I-FMq"/>
+                                    <constraint firstAttribute="height" constant="30" id="z3c-DD-e5W"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                    </stackView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="NSA-St-a1R" secondAttribute="trailing" id="8PJ-im-dYM"/>
+                <constraint firstItem="NSA-St-a1R" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="NEX-3e-7P2"/>
+                <constraint firstItem="NSA-St-a1R" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="VDr-xM-6u1"/>
+                <constraint firstItem="NSA-St-a1R" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Yin-4W-rnH"/>
+            </constraints>
+            <size key="customSize" width="208" height="67"/>
+            <connections>
+                <outlet property="txt" destination="Hrx-Kz-dcj" id="d2z-rK-fx6"/>
+            </connections>
+            <point key="canvasLocation" x="160.30534351145039" y="25.704225352112676"/>
+        </collectionViewCell>
+    </objects>
+    <designables>
+        <designable name="Hrx-Kz-dcj">
+            <size key="intrinsicContentSize" width="71" height="21.666666666666668"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="checkbox-check-svgrepo-com" width="40" height="40"/>
+    </resources>
+</document>

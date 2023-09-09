@@ -116,6 +116,13 @@
 		9FE6ABAD2A927F48007337B5 /* VerificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE6ABAC2A927F48007337B5 /* VerificationVC.swift */; };
 		9FE6ABAF2A928095007337B5 /* ResetPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE6ABAE2A928095007337B5 /* ResetPasswordVC.swift */; };
 		9FE6ABB12A9282F7007337B5 /* PasswordChangeSuccessVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE6ABB02A9282F7007337B5 /* PasswordChangeSuccessVC.swift */; };
+		9FFC2B2C2AAC389300DA1DD3 /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFC2B2A2AAC389300DA1DD3 /* SearchCell.swift */; };
+		9FFC2B2D2AAC389300DA1DD3 /* SearchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FFC2B2B2AAC389300DA1DD3 /* SearchCell.xib */; };
+		9FFC2B302AAC3A2000DA1DD3 /* CheckboxCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFC2B2E2AAC3A2000DA1DD3 /* CheckboxCell.swift */; };
+		9FFC2B312AAC3A2000DA1DD3 /* CheckboxCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FFC2B2F2AAC3A2000DA1DD3 /* CheckboxCell.xib */; };
+		9FFC2B342AAC3A7D00DA1DD3 /* CheckboxCelll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFC2B322AAC3A7D00DA1DD3 /* CheckboxCelll.swift */; };
+		9FFC2B352AAC3A7D00DA1DD3 /* CheckboxCelll.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FFC2B332AAC3A7D00DA1DD3 /* CheckboxCelll.xib */; };
+		9FFC2B372AAC416D00DA1DD3 /* RestaurantFilterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFC2B362AAC416D00DA1DD3 /* RestaurantFilterVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -232,6 +239,13 @@
 		9FE6ABAC2A927F48007337B5 /* VerificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationVC.swift; sourceTree = "<group>"; };
 		9FE6ABAE2A928095007337B5 /* ResetPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordVC.swift; sourceTree = "<group>"; };
 		9FE6ABB02A9282F7007337B5 /* PasswordChangeSuccessVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordChangeSuccessVC.swift; sourceTree = "<group>"; };
+		9FFC2B2A2AAC389300DA1DD3 /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
+		9FFC2B2B2AAC389300DA1DD3 /* SearchCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchCell.xib; sourceTree = "<group>"; };
+		9FFC2B2E2AAC3A2000DA1DD3 /* CheckboxCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxCell.swift; sourceTree = "<group>"; };
+		9FFC2B2F2AAC3A2000DA1DD3 /* CheckboxCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckboxCell.xib; sourceTree = "<group>"; };
+		9FFC2B322AAC3A7D00DA1DD3 /* CheckboxCelll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxCelll.swift; sourceTree = "<group>"; };
+		9FFC2B332AAC3A7D00DA1DD3 /* CheckboxCelll.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckboxCelll.xib; sourceTree = "<group>"; };
+		9FFC2B362AAC416D00DA1DD3 /* RestaurantFilterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantFilterVC.swift; sourceTree = "<group>"; };
 		D2CD1C92E98B7F58211B1B02 /* Pods_Where2Go.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Where2Go.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECCD9F3CDC9442A21BF83B69 /* Pods-Where2Go.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Where2Go.release.xcconfig"; path = "Target Support Files/Pods-Where2Go/Pods-Where2Go.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -514,6 +528,12 @@
 				9F74B2F92AA79F91000A7068 /* MultiselectCell.xib */,
 				9F74B2FC2AA7A108000A7068 /* SingleCell.swift */,
 				9F74B2FD2AA7A108000A7068 /* SingleCell.xib */,
+				9FFC2B2A2AAC389300DA1DD3 /* SearchCell.swift */,
+				9FFC2B2B2AAC389300DA1DD3 /* SearchCell.xib */,
+				9FFC2B2E2AAC3A2000DA1DD3 /* CheckboxCell.swift */,
+				9FFC2B2F2AAC3A2000DA1DD3 /* CheckboxCell.xib */,
+				9FFC2B322AAC3A7D00DA1DD3 /* CheckboxCelll.swift */,
+				9FFC2B332AAC3A7D00DA1DD3 /* CheckboxCelll.xib */,
 			);
 			path = Filter;
 			sourceTree = "<group>";
@@ -579,6 +599,7 @@
 				9FC21F652AA6380F00856D57 /* PersonProfileVC.swift */,
 				9FC21F672AA64AAE00856D57 /* ListingVC.swift */,
 				9F74B2E52AA79639000A7068 /* CafeFilterVC.swift */,
+				9FFC2B362AAC416D00DA1DD3 /* RestaurantFilterVC.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -715,12 +736,15 @@
 				9F0544282A9685DE008747EB /* ItemCell.xib in Resources */,
 				9F74B2FF2AA7A108000A7068 /* SingleCell.xib in Resources */,
 				9F8DBA472A93D2A900E7A0DC /* Home.storyboard in Resources */,
+				9FFC2B2D2AAC389300DA1DD3 /* SearchCell.xib in Resources */,
 				9F65E4952A9B723800370C7D /* HeaderChatCell.xib in Resources */,
 				9F3455592A97B0B7002455DF /* AmenitiesCell.xib in Resources */,
 				9F5B2D522A8B44440043F330 /* Montserrat-ExtraBold.ttf in Resources */,
+				9FFC2B312AAC3A2000DA1DD3 /* CheckboxCell.xib in Resources */,
 				9F86F66B2A9732A700747D2E /* HomeHeaderCell.xib in Resources */,
 				9F74B2F12AA798BE000A7068 /* FilterHeaderCell.xib in Resources */,
 				9F1ED02C2A99F98000693FDB /* DetailChatCell.xib in Resources */,
+				9FFC2B352AAC3A7D00DA1DD3 /* CheckboxCelll.xib in Resources */,
 				9FC21F5E2AA62E9200856D57 /* BookMarkCell.xib in Resources */,
 				9FAA50F72A9E61EA00614A58 /* GuestHeaderCell.xib in Resources */,
 				9F5B2D532A8B44440043F330 /* Montserrat-Light.ttf in Resources */,
@@ -827,6 +851,7 @@
 				9F1411662A8E542D00FF7B3D /* Screen+Extension.swift in Sources */,
 				9F86F66A2A9732A700747D2E /* HomeHeaderCell.swift in Sources */,
 				9F43960F2A9DB82A00DDF501 /* MenuCell.swift in Sources */,
+				9FFC2B342AAC3A7D00DA1DD3 /* CheckboxCelll.swift in Sources */,
 				9F884C5C2AA47E31006A84D1 /* Constant.swift in Sources */,
 				9F1943A32A8F7D630058CDCC /* UploadImageVC.swift in Sources */,
 				9F74B2FA2AA79F91000A7068 /* MultiselectCell.swift in Sources */,
@@ -834,6 +859,7 @@
 				9F5B2D5E2A8B50B70043F330 /* UIColor+Extension.swift in Sources */,
 				9FE6ABAD2A927F48007337B5 /* VerificationVC.swift in Sources */,
 				9F86F6752A97626400747D2E /* itemDetailVC.swift in Sources */,
+				9FFC2B302AAC3A2000DA1DD3 /* CheckboxCell.swift in Sources */,
 				9F1411782A8E928000FF7B3D /* LoginVC.swift in Sources */,
 				9F5B2D3C2A8B3EB80043F330 /* Where2Go.xcdatamodeld in Sources */,
 				9F14116A2A8E677C00FF7B3D /* CustomPageControl.swift in Sources */,
@@ -849,6 +875,7 @@
 				9F74B2E62AA79639000A7068 /* CafeFilterVC.swift in Sources */,
 				9F582D5A2AA3013F00D732F2 /* ChatVC.swift in Sources */,
 				9F582D532AA2F5C500D732F2 /* GuestRowCell.swift in Sources */,
+				9FFC2B2C2AAC389300DA1DD3 /* SearchCell.swift in Sources */,
 				9F65E4982A9B782F00370C7D /* ChatReplayCell.swift in Sources */,
 				9FC21F5D2AA62E9200856D57 /* BookMarkCell.swift in Sources */,
 				9FC21F682AA64AAE00856D57 /* ListingVC.swift in Sources */,
@@ -871,6 +898,7 @@
 				9F14115F2A8E4D1400FF7B3D /* WalkThroughCell.swift in Sources */,
 				9F5B2D322A8B3EB80043F330 /* AppDelegate.swift in Sources */,
 				9F5B2D342A8B3EB80043F330 /* SceneDelegate.swift in Sources */,
+				9FFC2B372AAC416D00DA1DD3 /* RestaurantFilterVC.swift in Sources */,
 				9F3C32DF2AA241620017782A /* ImageModel.swift in Sources */,
 				9FE6ABB12A9282F7007337B5 /* PasswordChangeSuccessVC.swift in Sources */,
 				9FC21F602AA6347C00856D57 /* SavedSearchVc.swift in Sources */,

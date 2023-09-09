@@ -32,6 +32,31 @@ class ListingVC: UIViewController {
         super.viewDidLoad()
         
     }
+    @IBAction func filterBtn(_ sender: Any) {
+        if self.indexRow == 0{
+                let storyboard = CafeFilterVC.instantiate(fromAppStoryboard: .Home)
+                if let presentationController = storyboard.presentationController as? UISheetPresentationController {
+                    presentationController.detents = [.custom(resolver: { context in
+                        return 600
+                    }) ,.medium() , .large()] /// change to [.medium(), .large()] for a half *and* full screen sheet
+                }
+                
+                self.present(storyboard, animated: true)
+            }
+        else{
+            if self.indexRow == 1{
+                    let storyboard = RestaurantFilterVC.instantiate(fromAppStoryboard: .Home)
+                    if let presentationController = storyboard.presentationController as? UISheetPresentationController {
+                        presentationController.detents = [.custom(resolver: { context in
+                            return 600
+                        }) ,.medium() , .large()] /// change to [.medium(), .large()] for a half *and* full screen sheet
+                    }
+                    
+                    self.present(storyboard, animated: true)
+                }
+        }
+        
+    }
 }
 
 
@@ -68,7 +93,7 @@ extension ListingVC: UICollectionViewDelegate, UICollectionViewDataSource{
         }
         return cell
     }
-  
+    
 }
 
 extension ListingVC: ChooseTypeCellDelegate{
