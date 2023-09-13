@@ -29,42 +29,65 @@ class WalkThroughVC: UIViewController {
             colView.isPagingEnabled = true
             let screen_width = ScreenSize.SCREEN_WIDTH
             let screenSize = CGSize(width: screen_width, height: colView.frame.height)
-
+            
             let layout1 = UICollectionViewFlowLayout()
             layout1.scrollDirection = .horizontal
             layout1.itemSize = screenSize
-
+            
             colView.setCollectionViewLayout(layout1, animated: true)
             colView.reloadData()
             
             arrData = [WalkthroughModel(image: "122", header: "Easy check in", subtitle: "orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"),
-                       WalkthroughModel(image: "", header: "List of Premium Café and Restaurants", subtitle: "orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"),WalkthroughModel(image: "", header: "List of Premium Café and Restaurants", subtitle: "orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua")]
+                       WalkthroughModel(image: "Screenshot 2023-09-12 at 7.45.50 PM", header: "List of Premium Café and Restaurants", subtitle: "orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua")]
         }
     }
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         dotView.currentPageImage = UIImage(named: "Shape 1")
         dotView.otherPagesImage = UIImage(named: "Shape 2")
-
+        
         dotView.numberOfPages = self.arrData.count
         dotView.currentPage = 0
     }
     
     @IBAction private func nextbtn(_ sender: AnyObject) {
-           let visibleItems: NSArray = self.colView.indexPathsForVisibleItems as NSArray
-           let currentItem: IndexPath = visibleItems.object(at: 0) as! IndexPath
-           let nextItem: IndexPath = IndexPath(item: currentItem.item + 1, section: 0)
-   // This part here
-           if nextItem.row < arrData.count {
-               self.colView.scrollToItem(at: nextItem, at: .left, animated: true)
-               self.view.layoutIfNeeded()
-               dotView.currentPage = nextItem.row
 
-           }
-         
-       }
+        let visibleItems: NSArray  = colView.indexPathsForVisibleItems as NSArray
+        let currentItem: IndexPath = visibleItems.object(at: 0) as! IndexPath
+        let nextItem: IndexPath = IndexPath(item: currentItem.item + 1, section: 0)
+
+        if nextItem.row <= arrData.count - 1 {
+            colView.scrollToNextItem()
+           
+
+        }else{
+        }
+        if nextItem.row == self.arrData.count - 1{
+            self.startBtn.isHidden = false
+            self.nextBtn.isHidden = true
+            self.backBtn.isHidden = true
+        }else{
+            
+        }
+        
+    }
+    
+    @IBAction private func backBtn(_ sender: AnyObject) {
+
+        let visibleItems: NSArray  = colView.indexPathsForVisibleItems as NSArray
+        let currentItem: IndexPath = visibleItems.object(at: 0) as! IndexPath
+        let nextItem: IndexPath = IndexPath(item: currentItem.item - 1, section: 0)
+
+        if nextItem.row > arrData.count {
+            colView.scrollToPreviousItem()
+
+
+        }else{
+        }
+        
+    }
     
     @IBAction  func getStartedBtn(_ sender: AnyObject) {
         User.shared.saveWalkthrough(with: .walkthough, value: true)
@@ -72,7 +95,7 @@ class WalkThroughVC: UIViewController {
         self.navigationController?.pushViewController(vc, animated: true)
         
     }
-
+    
 }
 
 extension WalkThroughVC: UICollectionViewDataSource, UICollectionViewDelegate{
@@ -89,36 +112,49 @@ extension WalkThroughVC: UICollectionViewDataSource, UICollectionViewDelegate{
         return cell
     }
     
-    
-    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        for cell in colView.visibleCells {
-            if let indexPath = colView.indexPath(for: cell){
-            let index = indexPath.row
-            dotView.currentPage = index
-                if indexPath.row == self.arrData.count - 1{
-
-                        self.nextBtn.isHidden = true
-                        self.backBtn.isHidden = true
-                        self.startBtn.isHidden = false
-                        self.view.layoutIfNeeded()
-                    
-                }
-                else{
-               
-                        self.nextBtn.isHidden = false
-                        self.backBtn.isHidden = false
-                        self.startBtn.isHidden = true
-                        self.view.layoutIfNeeded()
-
-                    
-                   
-                }
-                print(indexPath)
-
-            }
-
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        if indexPath.row == self.arrData.count - 1{
+            self.startBtn.isHidden = false
+            self.nextBtn.isHidden = true
+            self.backBtn.isHidden = true
+        }else{
+            self.startBtn.isHidden = true
+            self.nextBtn.isHidden = false
+            self.backBtn.isHidden = false
         }
+        dotView.currentPage = indexPath.row
     }
+    
+    
+    //    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+    //        for cell in colView.visibleCells {
+    //            if let indexPath = colView.indexPath(for: cell){
+    //            let index = indexPath.row
+    //            dotView.currentPage = index
+    //                if indexPath.row == self.arrData.count - 1{
+    //
+    //                        self.nextBtn.isHidden = true
+    //                        self.backBtn.isHidden = true
+    //                        self.startBtn.isHidden = false
+    //                        self.view.layoutIfNeeded()
+    //
+    //                }
+    //                else{
+    //
+    //                        self.nextBtn.isHidden = false
+    //                        self.backBtn.isHidden = false
+    //                        self.startBtn.isHidden = true
+    //                        self.view.layoutIfNeeded()
+    //
+    //
+    //
+    //                }
+    //                print(indexPath)
+    //
+    //            }
+    //
+    //        }
+    //    }
     
     
 }

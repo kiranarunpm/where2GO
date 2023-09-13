@@ -37,6 +37,7 @@ class itemDetailVC: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var categoryTabHeight: NSLayoutConstraint!
     var categoryArr = ["Hot Coffee", "Hot Drinks", "Cold Drinks", "All Day Breakfast", "Pizza & Flatbread", "Starters Main Course", "Desserts"]
     let numberOfImages = ["image-0","image-1","image-2","image-3","image-4","image-5","image-6","image-7","image-8","image-9","image-10","image-11","image-12","image-1", "image-3","image-7"]
+    let typesArr = [ItemModel(name: "Review", image: "Group 2988"), ItemModel(name: "Menu", image: "food-dinner-svgrepo-com (1)"), ItemModel(name: "Events", image: "schedule-svgrepo-com-2")]
     var imageArr = [ImageModel]()
     var rowCount = 0
     
@@ -58,7 +59,7 @@ class itemDetailVC: UIViewController, CLLocationManagerDelegate {
             colView.delegate = self
             colView.register(UINib(nibName: AmenitiesCell.identifire, bundle: nil), forCellWithReuseIdentifier: AmenitiesCell.identifire)
             
-            let screenSize = CGSize(width: 100, height: 150)
+            let screenSize = CGSize(width: 80, height: 150)
             
             let layout1 = UICollectionViewFlowLayout()
             layout1.scrollDirection = .horizontal
@@ -368,6 +369,7 @@ class itemDetailVC: UIViewController, CLLocationManagerDelegate {
         if promoBtn.tag == 0{
             UIView.animate(withDuration: 0.3, delay: 0.0, options: .curveEaseIn) {
                 self.promoHeight.constant = 240
+                self.pagecontoller.isHidden = false
                 self.view.layoutIfNeeded()
 
             }
@@ -376,6 +378,8 @@ class itemDetailVC: UIViewController, CLLocationManagerDelegate {
             promoBtn.tag = 0
             UIView.animate(withDuration: 0.3, delay: 0.0, options: .curveEaseIn) {
                 self.promoHeight.constant = 0
+                self.pagecontoller.isHidden = true
+
                 self.view.layoutIfNeeded()
        
             }
@@ -427,6 +431,16 @@ class itemDetailVC: UIViewController, CLLocationManagerDelegate {
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
+    @IBAction func backBtn(_ sender: Any) {
+        self.navigationController?.goBack()
+    }
+    
+    @IBAction func chatBtn(_ sender: Any) {
+        let vc = ChatVC.instantiate(fromAppStoryboard: .Home)
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    
 }
 
 extension itemDetailVC: UICollectionViewDataSource, UICollectionViewDelegate{
@@ -440,7 +454,7 @@ extension itemDetailVC: UICollectionViewDataSource, UICollectionViewDelegate{
         }
         
         else if collectionView == typeCell{
-            return 3
+            return typesArr.count
         }
         
         else if collectionView == categoryCol{
@@ -463,17 +477,19 @@ extension itemDetailVC: UICollectionViewDataSource, UICollectionViewDelegate{
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ChooseTypeCell.identifire, for: indexPath) as! ChooseTypeCell
             cell.delegete = self
             cell.indexRow = indexPath.row
-            
+            cell.chooseBtn.setTitle("  " + typesArr[indexPath.row].name, for: .normal)
+            cell.chooseBtn.setImage(UIImage(named: typesArr[indexPath.row].image), for: .normal)
+
             if indexPath.row == self.indexRow{
                 cell.chooseBtn.layer.backgroundColor = UIColor.darkGreen.cgColor
                 cell.chooseBtn.setTitleColor(UIColor.white, for: .normal)
-                cell.chooseBtn.imageView?.tintColor =  UIColor.mangoYellowColor
+                cell.chooseBtn.imageView?.tintColor =  UIColor.white
                 cell.chooseBtn.layer.cornerRadius = cell.chooseBtn.frame.height/2
                 
             }else{
                 cell.chooseBtn.layer.backgroundColor = UIColor.secondaryColor.cgColor
                 cell.chooseBtn.setTitleColor(UIColor.mangoYellowColor, for: .normal)
-                cell.chooseBtn.imageView?.tintColor =  UIColor.secondaryColor
+                cell.chooseBtn.imageView?.tintColor =  UIColor.mangoYellowColor
                 cell.chooseBtn.layer.cornerRadius = cell.chooseBtn.frame.height/2
             }
             return cell

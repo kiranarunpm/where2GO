@@ -20,4 +20,10 @@ class PersonProfileVC: UIViewController {
     @IBAction func backBtn(_ sender: Any) {
         self.navigationController?.goBack()
     }
+    
+    @IBAction func chatBtn(_ sender: Any) {
+        let vc = ChatVC.instantiate(fromAppStoryboard: .Home)
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
 }

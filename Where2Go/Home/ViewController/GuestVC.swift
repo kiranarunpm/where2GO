@@ -30,6 +30,10 @@ class GuestVC: UIViewController {
         ]
     }
     
+    @IBAction func backBtn(_ sender: Any) {
+        self.navigationController?.goBack()
+    }
+    
 }
 
 extension GuestVC: UITableViewDelegate, UITableViewDataSource{
@@ -56,7 +60,7 @@ extension GuestVC: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: GuestRowCell.identifite, for: indexPath) as! GuestRowCell
         let index = guestArr[indexPath.section]
-        
+        cell.delegate = self
         cell.nameTxt.text = index.persons[indexPath.row].name
         
         return cell
@@ -92,6 +96,15 @@ extension GuestVC: GuestHeaderCellDelegate{
         self.tableView.reloadData()
     }
     
+    
+    
+}
+
+extension GuestVC: GuestRowCellDelegate{
+    func toProfilePage() {
+        let vc = PersonProfileVC.instantiate(fromAppStoryboard: .Home)
+        self.navigationController?.pushViewController(vc, animated:true)
+    }
     
     
 }

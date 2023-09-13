@@ -75,13 +75,13 @@ enum FontType: Int {
 //        print("fontSize: ", fontSize)
         switch FontType(rawValue: fontStyle) {
             
-        case .regular: font = UIFont.WTGfont(.regular, size: fontSize)
+        case .regular: font = UIFont.WTGfont(.regular, size: fontSize - 2)
             
-        case .medium: font = UIFont.WTGfont(.medium, size: fontSize)
+        case .medium: font = UIFont.WTGfont(.medium, size: fontSize - 2)
             
-        case .semibold: font = UIFont.WTGfont(.semibold, size: fontSize)
+        case .semibold: font = UIFont.WTGfont(.semibold, size: fontSize - 2)
             
-        case .bold: font = UIFont.WTGfont(.bold, size: fontSize)
+        case .bold: font = UIFont.WTGfont(.bold, size: fontSize - 2)
             
         default: break
             
@@ -108,6 +108,9 @@ enum FontType: Int {
         case 5: textColor = UIColor.secondaryColor
             
         case 6: textColor = UIColor.mangoYellowColor
+            
+        case 7: textColor = UIColor(named: "morelightGreen")
+
 
         default: textColor = UIColor.primaryColor
             
@@ -134,6 +137,9 @@ enum FontType: Int {
         case 5: textColor = UIColor.red
 
         case 6: textColor = UIColor(named: "PriceGreenColor")
+            
+        case 7: textColor = UIColor(named: "morelightGreen")
+
 
         default: textColor = UIColor.primaryColor
             

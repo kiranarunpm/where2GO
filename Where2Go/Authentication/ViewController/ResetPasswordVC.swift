@@ -7,7 +7,7 @@
 
 import UIKit
 import TextFieldEffects
-class ResetPasswordVC: UIViewController {
+class ResetPasswordVC: BaseVC {
 
     @IBOutlet weak var confirmPasswordTxt: HoshiTextField!
     @IBOutlet weak var passwordTxt: HoshiTextField!

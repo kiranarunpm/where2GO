@@ -76,14 +76,14 @@ extension ListingVC: UICollectionViewDelegate, UICollectionViewDataSource{
             cell.chooseBtn.layer.backgroundColor = UIColor.darkGreen.cgColor
             cell.chooseBtn.setTitleColor(UIColor.white, for: .normal)
             cell.chooseBtn.imageView?.tintColor =  UIColor.mangoYellowColor
-            cell.chooseBtn.layer.cornerRadius = cell.chooseBtn.layer.frame.height/2
+            cell.chooseBtn.layer.cornerRadius = 20
             cell.chooseBtn.titleLabel?.font =  UIFont.WTGfont(.semibold, size: 14)
             cell.layoutIfNeeded()
             
         }else{
             cell.chooseBtn.layer.backgroundColor = UIColor.white.cgColor
             cell.chooseBtn.setTitleColor(UIColor.black, for: .normal)
-            cell.chooseBtn.layer.cornerRadius = cell.chooseBtn.layer.frame.height/2
+            cell.chooseBtn.layer.cornerRadius = 20
             cell.chooseBtn.layer.borderColor = UIColor.black.cgColor
             cell.chooseBtn.layer.borderWidth = 1
             cell.chooseBtn.titleLabel?.font =  UIFont.WTGfont(.semibold, size: 14)

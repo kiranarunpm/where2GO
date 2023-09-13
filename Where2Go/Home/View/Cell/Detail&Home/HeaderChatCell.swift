@@ -14,19 +14,23 @@ class HeaderChatCell: UITableViewHeaderFooterView {
     static let identifire: String = "HeaderChatCell"
     var delegate : HeaderChatCellDelegate?
     
-    @IBOutlet weak var img: UIImageView!
+    @IBOutlet weak var image: UIImageView!
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(HeaderChatCell.cellTappedMethod(_:)))
         
-//        self.img.addGestureRecognizer(tapGestureRecognizer)
     }
 
     
 
     @objc func cellTappedMethod(_ sender:AnyObject){
-        self.delegate?.toProfilePage()
     }
+    
+    
+    @IBAction func toprofileBtn(_ sender: Any) {
+        self.delegate?.toProfilePage()
 
+    }
+    
 }

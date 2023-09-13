@@ -143,6 +143,9 @@
                                                         <integer key="value" value="2"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="submitBtn:" destination="XgG-iv-UFk" eventType="touchUpInside" id="bl5-sY-bnW"/>
+                                                </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="T1t-lA-Jvq">
                                                 <rect key="frame" x="39.333333333333329" y="457" width="192.33333333333337" height="29"/>
@@ -157,7 +160,7 @@
                                                                 <real key="value" value="14"/>
                                                             </userDefinedRuntimeAttribute>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="style">
-                                                                <integer key="value" value="3"/>
+                                                                <integer key="value" value="1"/>
                                                             </userDefinedRuntimeAttribute>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="fontStyle">
                                                                 <integer key="value" value="0"/>
@@ -439,7 +442,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="81T-nw-51A">
                                                 <rect key="frame" x="25" y="585" width="343" height="58"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vf0-6p-L5T" customClass="WTGIButton" customModule="Where2Go" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vf0-6p-L5T" customClass="WTGIButton" customModule="Where2Go" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="343" height="29"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -480,7 +483,7 @@
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="3Kq-OS-cLu" secondAttribute="trailing" constant="25" id="5u2-xT-xYq"/>
                                             <constraint firstAttribute="bottom" secondItem="U2n-y0-ZQG" secondAttribute="bottom" constant="16" id="7Y3-VC-H6r"/>
@@ -555,7 +558,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wsw-1g-7SM">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1158"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1138"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q28-7U-HL7">
                                                 <rect key="frame" x="12" y="0.0" width="77" height="66"/>
@@ -564,6 +567,9 @@
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="ic_back"/>
+                                                <connections>
+                                                    <action selector="backBtn:" destination="Ofg-uH-eeC" eventType="touchUpInside" id="eFF-de-tR6"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upload a Profile Photo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zA9-4L-wxO" customClass="WTGLabel" customModule="Where2Go" customModuleProvider="target">
                                                 <rect key="frame" x="25" y="86" width="229" height="28.666666666666671"/>
@@ -600,17 +606,16 @@
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="CvW-hi-Kgd">
-                                                <rect key="frame" x="25" y="200" width="343" height="458"/>
+                                                <rect key="frame" x="25" y="200" width="343" height="438"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dyg-gc-M9V" customClass="R_UIView" customModule="Where2Go" customModuleProvider="target">
-                                                        <rect key="frame" x="71.666666666666686" y="0.0" width="200" height="200"/>
+                                                        <rect key="frame" x="81.666666666666686" y="0.0" width="180" height="180"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="K1d-Ut-lwP">
-                                                                <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="width" constant="200" id="6W7-g1-6NW"/>
-                                                                    <constraint firstAttribute="height" constant="200" id="L3D-21-xv8"/>
+                                                                    <constraint firstAttribute="width" constant="180" id="6W7-g1-6NW"/>
                                                                 </constraints>
                                                             </imageView>
                                                         </subviews>
@@ -619,21 +624,20 @@
                                                             <constraint firstItem="K1d-Ut-lwP" firstAttribute="top" secondItem="dyg-gc-M9V" secondAttribute="top" id="0BK-hY-Rsv"/>
                                                             <constraint firstItem="K1d-Ut-lwP" firstAttribute="leading" secondItem="dyg-gc-M9V" secondAttribute="leading" id="8xX-zg-yWL"/>
                                                             <constraint firstAttribute="bottom" secondItem="K1d-Ut-lwP" secondAttribute="bottom" id="ExU-XI-H2m"/>
-                                                            <constraint firstAttribute="height" constant="200" id="IhP-Bn-WV6"/>
+                                                            <constraint firstAttribute="height" constant="180" id="IhP-Bn-WV6"/>
                                                             <constraint firstAttribute="trailing" secondItem="K1d-Ut-lwP" secondAttribute="trailing" id="kT2-WH-5e2"/>
-                                                            <constraint firstAttribute="width" constant="200" id="qzo-PG-zp1"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="style">
                                                                 <integer key="value" value="0"/>
                                                             </userDefinedRuntimeAttribute>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                <real key="value" value="100"/>
+                                                                <real key="value" value="90"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ENx-Th-TFF" customClass="WTGIButton" customModule="Where2Go" customModuleProvider="target">
-                                                        <rect key="frame" x="17" y="216" width="309" height="50"/>
+                                                        <rect key="frame" x="17" y="196" width="309" height="50"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="50" id="iWJ-Vb-aHE"/>
                                                         </constraints>
@@ -641,12 +645,12 @@
                                                         <state key="normal" title="UPLOAD PHOTO"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="style">
-                                                                <integer key="value" value="0"/>
+                                                                <integer key="value" value="15"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </button>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W3G-bO-htZ" customClass="HoshiTextField" customModule="TextFieldEffects">
-                                                        <rect key="frame" x="0.0" y="282" width="343" height="80"/>
+                                                        <rect key="frame" x="0.0" y="262" width="343" height="80"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="80" id="HR5-5y-jFE"/>
@@ -667,7 +671,7 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IiV-hz-HtW" customClass="HoshiTextField" customModule="TextFieldEffects">
-                                                        <rect key="frame" x="0.0" y="378" width="343" height="80"/>
+                                                        <rect key="frame" x="0.0" y="358" width="343" height="80"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="80" id="OAv-b8-YzF"/>
@@ -693,11 +697,12 @@
                                                     <constraint firstItem="IiV-hz-HtW" firstAttribute="leading" secondItem="CvW-hi-Kgd" secondAttribute="leading" id="Ww3-x8-Sdt"/>
                                                     <constraint firstItem="W3G-bO-htZ" firstAttribute="leading" secondItem="CvW-hi-Kgd" secondAttribute="leading" id="j1I-Sk-84V"/>
                                                     <constraint firstItem="ENx-Th-TFF" firstAttribute="width" secondItem="CvW-hi-Kgd" secondAttribute="width" multiplier="0.9" id="k2m-kF-Frd"/>
+                                                    <constraint firstItem="ENx-Th-TFF" firstAttribute="top" secondItem="dyg-gc-M9V" secondAttribute="bottom" constant="16" id="kSl-YV-1H3"/>
                                                     <constraint firstAttribute="trailing" secondItem="W3G-bO-htZ" secondAttribute="trailing" id="yyl-hz-z5l"/>
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="A1V-e5-6C9">
-                                                <rect key="frame" x="59" y="704" width="275" height="50"/>
+                                                <rect key="frame" x="59" y="684" width="275" height="50"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FQC-wu-auW" customClass="WTGIButton" customModule="Where2Go" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="132.66666666666666" height="50"/>
@@ -734,7 +739,7 @@
                                                 </subviews>
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z6V-5a-4YO" customClass="HoshiTextField" customModule="TextFieldEffects">
-                                                <rect key="frame" x="25" y="779" width="343" height="80"/>
+                                                <rect key="frame" x="25" y="759" width="343" height="80"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="80" id="qBH-h7-Kct"/>
@@ -755,7 +760,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cW0-iz-aRE" customClass="WTGLabel" customModule="Where2Go" customModuleProvider="target">
-                                                <rect key="frame" x="25" y="883" width="24.333333333333329" height="20.333333333333371"/>
+                                                <rect key="frame" x="25" y="863" width="24.333333333333329" height="20.333333333333371"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -772,7 +777,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oW0-xW-aNB" customClass="R_UIView" customModule="Where2Go" customModuleProvider="target">
-                                                <rect key="frame" x="25" y="920" width="343" height="128"/>
+                                                <rect key="frame" x="25" y="900" width="343" height="128"/>
                                                 <subviews>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Write something about you" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="i0a-WA-OXg">
                                                         <rect key="frame" x="0.0" y="0.0" width="343" height="128"/>
@@ -801,7 +806,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SpJ-C7-OH1" customClass="WTGIButton" customModule="Where2Go" customModuleProvider="target">
-                                                <rect key="frame" x="110.66666666666667" y="1073" width="171.66666666666663" height="50"/>
+                                                <rect key="frame" x="110.66666666666667" y="1053" width="171.66666666666663" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="Mvi-RB-GRA"/>
                                                 </constraints>
@@ -817,7 +822,7 @@
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="Q28-7U-HL7" firstAttribute="top" secondItem="Wsw-1g-7SM" secondAttribute="top" id="0RI-dY-cn5"/>
                                             <constraint firstItem="zA9-4L-wxO" firstAttribute="leading" secondItem="Wsw-1g-7SM" secondAttribute="leading" constant="25" id="0iD-AQ-hhG"/>
@@ -877,7 +882,9 @@
                         <outlet property="chooseGenderMaleBtn" destination="FQC-wu-auW" id="QG7-s3-CjD"/>
                         <outlet property="fName" destination="W3G-bO-htZ" id="BJH-wq-gtK"/>
                         <outlet property="lName" destination="IiV-hz-HtW" id="sWT-6Z-Esj"/>
+                        <outlet property="profileImg" destination="K1d-Ut-lwP" id="zxD-sO-dih"/>
                         <outlet property="selectCountry" destination="z6V-5a-4YO" id="v0R-3l-TcJ"/>
+                        <outlet property="uploadPhotoBtn" destination="ENx-Th-TFF" id="OG6-oS-Y5s"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0ly-S8-9Oa" sceneMemberID="firstResponder"/>
@@ -893,7 +900,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="73d-rH-MoE">
-                                <rect key="frame" x="0.0" y="59" width="399" height="500"/>
+                                <rect key="frame" x="0.0" y="59" width="393" height="500"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W1l-UA-p5o">
                                         <rect key="frame" x="12" y="0.0" width="77" height="66"/>
@@ -902,6 +909,9 @@
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="ic_back"/>
+                                        <connections>
+                                            <action selector="backBtn:" destination="zdG-2s-sOA" eventType="touchUpInside" id="jMI-Lr-vc0"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Verification" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IrY-Ys-UjT" customClass="WTGLabel" customModule="Where2Go" customModuleProvider="target">
                                         <rect key="frame" x="25" y="86" width="116" height="28.666666666666671"/>
@@ -921,7 +931,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We have send an OTP to the registered email address." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2GZ-Zo-ZaO" customClass="WTGLabel" customModule="Where2Go" customModuleProvider="target">
-                                        <rect key="frame" x="25" y="134.66666666666666" width="349" height="17"/>
+                                        <rect key="frame" x="25" y="134.66666666666666" width="343" height="33.666666666666657"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -937,79 +947,79 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="zi3-3m-HwF">
-                                        <rect key="frame" x="46.666666666666657" y="233.66666666666669" width="305.66666666666674" height="60"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="zi3-3m-HwF">
+                                        <rect key="frame" x="74" y="250.33333333333331" width="245" height="50"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E2U-pG-b5N" customClass="R_UIView" customModule="Where2Go" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="64" height="60"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="60" id="2vf-ti-J7p"/>
-                                                    <constraint firstAttribute="width" constant="64" id="xHx-dr-78a"/>
+                                                    <constraint firstAttribute="height" constant="50" id="2vf-ti-J7p"/>
+                                                    <constraint firstAttribute="width" constant="50" id="xHx-dr-78a"/>
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                                         <color key="value" name="darkGreen"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                        <real key="value" value="0.5"/>
+                                                        <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="5"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ECE-dI-EwR" customClass="R_UIView" customModule="Where2Go" customModuleProvider="target">
-                                                <rect key="frame" x="79" y="0.0" width="64" height="60"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SP5-Be-KHr" customClass="R_UIView" customModule="Where2Go" customModuleProvider="target">
+                                                <rect key="frame" x="65" y="0.0" width="50" height="50"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="64" id="IQS-1o-tGc"/>
-                                                    <constraint firstAttribute="height" constant="60" id="uYq-Se-gI1"/>
+                                                    <constraint firstAttribute="width" constant="50" id="3tw-Sf-lxQ"/>
+                                                    <constraint firstAttribute="height" constant="50" id="b2C-Aj-ocV"/>
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                                         <color key="value" name="darkGreen"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                        <real key="value" value="0.5"/>
+                                                        <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="5"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h7Y-1B-meV" customClass="R_UIView" customModule="Where2Go" customModuleProvider="target">
-                                                <rect key="frame" x="158" y="0.0" width="64" height="60"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F2Z-wl-S2f" customClass="R_UIView" customModule="Where2Go" customModuleProvider="target">
+                                                <rect key="frame" x="130" y="0.0" width="50" height="50"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="64" id="UN3-kt-ab6"/>
-                                                    <constraint firstAttribute="height" constant="60" id="cPJ-9M-wyE"/>
+                                                    <constraint firstAttribute="width" constant="50" id="2rx-m1-btY"/>
+                                                    <constraint firstAttribute="height" constant="50" id="sho-I1-IrJ"/>
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                                         <color key="value" name="darkGreen"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                        <real key="value" value="0.5"/>
+                                                        <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="5"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Krv-sQ-qlC" customClass="R_UIView" customModule="Where2Go" customModuleProvider="target">
-                                                <rect key="frame" x="237.00000000000003" y="0.0" width="68.666666666666657" height="60"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="57d-zi-G4a" customClass="R_UIView" customModule="Where2Go" customModuleProvider="target">
+                                                <rect key="frame" x="195" y="0.0" width="50" height="50"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="64" id="wTF-E1-eLm"/>
-                                                    <constraint firstAttribute="height" constant="60" id="xLF-a1-kQu"/>
+                                                    <constraint firstAttribute="height" constant="50" id="8tw-Ka-PNI"/>
+                                                    <constraint firstAttribute="width" constant="50" id="gME-Ng-NtW"/>
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                                         <color key="value" name="darkGreen"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                        <real key="value" value="0.5"/>
+                                                        <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="5"/>
@@ -1017,12 +1027,9 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="60" id="jEl-6H-Htl"/>
-                                        </constraints>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter OTP" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O21-Be-G2V" customClass="WTGLabel" customModule="Where2Go" customModuleProvider="target">
-                                        <rect key="frame" x="46.666666666666664" y="201.66666666666669" width="65.666666666666686" height="17"/>
+                                        <rect key="frame" x="74" y="218.33333333333331" width="65.666666666666686" height="17"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -1039,7 +1046,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.45" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8NB-Nb-3R1" customClass="WTGLabel" customModule="Where2Go" customModuleProvider="target">
-                                        <rect key="frame" x="46.666666666666664" y="310.66666666666669" width="29.333333333333336" height="17"/>
+                                        <rect key="frame" x="74" y="317.33333333333331" width="29.333333333333329" height="17"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -1056,7 +1063,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jh0-uS-G5n" customClass="WTGIButton" customModule="Where2Go" customModuleProvider="target">
-                                        <rect key="frame" x="28.666666666666657" y="359" width="341.66666666666674" height="50"/>
+                                        <rect key="frame" x="59" y="365.66666666666669" width="275" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="qME-L4-isQ"/>
                                         </constraints>
@@ -1075,7 +1082,6 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="jh0-uS-G5n" firstAttribute="centerX" secondItem="73d-rH-MoE" secondAttribute="centerX" id="1jj-sM-5Oq"/>
-                                    <constraint firstItem="zi3-3m-HwF" firstAttribute="width" secondItem="73d-rH-MoE" secondAttribute="width" multiplier="0.765903" id="3an-9s-Lm7"/>
                                     <constraint firstItem="IrY-Ys-UjT" firstAttribute="leading" secondItem="73d-rH-MoE" secondAttribute="leading" constant="25" id="Jai-5V-zEV"/>
                                     <constraint firstAttribute="height" constant="500" id="MmW-Gx-Dkr"/>
                                     <constraint firstAttribute="trailing" secondItem="2GZ-Zo-ZaO" secondAttribute="trailing" constant="25" id="PoW-M8-xEC"/>
@@ -1091,7 +1097,7 @@
                                     <constraint firstItem="IrY-Ys-UjT" firstAttribute="top" secondItem="W1l-UA-p5o" secondAttribute="bottom" constant="20" id="pg6-Gu-efR"/>
                                     <constraint firstItem="O21-Be-G2V" firstAttribute="top" secondItem="2GZ-Zo-ZaO" secondAttribute="bottom" constant="50" id="qgR-4x-xIv"/>
                                     <constraint firstItem="zi3-3m-HwF" firstAttribute="centerX" secondItem="73d-rH-MoE" secondAttribute="centerX" id="sh9-k0-cU6"/>
-                                    <constraint firstItem="jh0-uS-G5n" firstAttribute="width" secondItem="73d-rH-MoE" secondAttribute="width" multiplier="0.856307" id="vfu-Kj-hnb"/>
+                                    <constraint firstItem="jh0-uS-G5n" firstAttribute="width" secondItem="73d-rH-MoE" secondAttribute="width" multiplier="0.7" id="vfu-Kj-hnb"/>
                                 </constraints>
                             </view>
                         </subviews>

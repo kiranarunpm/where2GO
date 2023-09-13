@@ -49,6 +49,9 @@
                                                 <integer key="value" value="0"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="backBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="ChW-BA-MAM"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6UC-n7-CPO" customClass="WTGIButton" customModule="Where2Go" customModuleProvider="target">
                                         <rect key="frame" x="161.33333333333331" y="0.0" width="153" height="60"/>
@@ -60,7 +63,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="nextbtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="GBC-Yt-5bj"/>
+                                            <action selector="nextbtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Il2-vG-Gfd"/>
                                         </connections>
                                     </button>
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dg0-zw-Duj" customClass="WTGIButton" customModule="Where2Go" customModuleProvider="target">
@@ -100,7 +103,7 @@
                         <outlet property="backBtn" destination="rEK-zH-Hsq" id="7dT-hI-CIi"/>
                         <outlet property="colView" destination="Le5-h7-tJz" id="uyv-DW-dFY"/>
                         <outlet property="dotView" destination="bsQ-HH-R8O" id="KtD-Sa-8ll"/>
-                        <outlet property="nextBtn" destination="6UC-n7-CPO" id="BpK-Fc-zzC"/>
+                        <outlet property="nextBtn" destination="6UC-n7-CPO" id="wRf-2A-bBL"/>
                         <outlet property="startBtn" destination="dg0-zw-Duj" id="Gtx-Kr-xLC"/>
                     </connections>
                 </viewController>

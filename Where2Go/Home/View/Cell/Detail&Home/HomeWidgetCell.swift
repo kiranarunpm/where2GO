@@ -20,7 +20,7 @@ class HomeWidgetCell: UITableViewCell {
             colView.delegate = self
             colView.register(UINib(nibName: ItemCell.identifire, bundle: nil), forCellWithReuseIdentifier: ItemCell.identifire)
             
-            let screenSize = CGSize(width: 190, height: 260)
+            let screenSize = CGSize(width: 190, height: 280)
           
             let layout1 = UICollectionViewFlowLayout()
             layout1.scrollDirection = .horizontal

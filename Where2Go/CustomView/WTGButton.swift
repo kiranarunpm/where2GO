@@ -38,7 +38,6 @@ import UIKit
     //MARK: LayoutSubviews
     override func layoutSubviews() {
         super.layoutSubviews()
-        self.titleLabel?.font =  UIFont.WTGfont(.semibold, size: 14)
         
         switch style {
             
@@ -47,35 +46,50 @@ import UIKit
                 
                 addShadowPathLayer(fillColor: UIColor.secondaryColor)
                 self.setTitleColor(UIColor.black, for: .normal)
+                self.titleLabel?.font =  UIFont.WTGfont(.semibold, size: 14)
+
             }
             
         case 1:
             
             addShadowPathLayer(fillColor: UIColor.darkGreen)
             self.setTitleColor(UIColor.white, for: .normal)
+            self.titleLabel?.font =  UIFont.WTGfont(.semibold, size: 14)
+
             
         case 2:
             
             addShadowPathLayer(fillColor: UIColor.mangoYellowColor)
             self.setTitleColor(UIColor.white, for: .normal)
+            self.titleLabel?.font =  UIFont.WTGfont(.semibold, size: 14)
+
             
         case 3:
             
             self.setTitleColor(UIColor.lightGreenColor, for: .normal)
-            
+            self.titleLabel?.font =  UIFont.WTGfont(.regular, size: 14)
+
         case 4:
             
             self.setTitleColor(UIColor.darkGray, for: .normal)
+            self.titleLabel?.font =  UIFont.WTGfont(.semibold, size: 14)
+
             
         case 5:
             addShadowPathLayer(fillColor: UIColor.darkBrownColor)
             self.setTitleColor(UIColor.white, for: .normal)
+            self.titleLabel?.font =  UIFont.WTGfont(.semibold, size: 14)
+
             
         case 6:
             self.setTitleColor(UIColor.white, for: .normal)
             self.tintColor = UIColor.white
             layer.backgroundColor = UIColor.darkGreen.cgColor
             layer.cornerRadius = frame.height/2
+            self.imageView?.tintColor =  UIColor.white
+            self.titleLabel?.font =  UIFont.WTGfont(.semibold, size: 14)
+
+
 
         case 7:
             layer.backgroundColor = UIColor.white.cgColor
@@ -84,17 +98,23 @@ import UIKit
             self.setTitleColor(UIColor.darkGreen, for: .normal)
             self.tintColor = UIColor.darkGreen
             layer.cornerRadius = frame.height/2
-            self.imageView?.tintColor =  UIColor.white
+            self.imageView?.tintColor =  UIColor.black
+            self.titleLabel?.font =  UIFont.WTGfont(.semibold, size: 14)
+
 
 
         case 8:
             addShadowPathLayer(fillColor: UIColor.darkGreen)
             self.setTitleColor(UIColor.white, for: .normal)
             self.imageView?.tintColor =  UIColor.primaryColor
+            self.titleLabel?.font =  UIFont.WTGfont(.semibold, size: 14)
+
 
         case 9:
             addShadowPathLayer(fillColor: UIColor.darkGreen)
             self.imageView?.tintColor =  UIColor.white
+            self.titleLabel?.font =  UIFont.WTGfont(.semibold, size: 14)
+
             
             
         case 10:
@@ -102,6 +122,8 @@ import UIKit
             self.setTitleColor(UIColor.mangoYellowColor, for: .normal)
             self.imageView?.tintColor =  UIColor.mangoYellowColor
             layer.cornerRadius = frame.height/2
+            self.titleLabel?.font =  UIFont.WTGfont(.semibold, size: 14)
+
             
         case 11:
             layer.backgroundColor = UIColor.white.cgColor
@@ -110,6 +132,8 @@ import UIKit
             layer.cornerRadius = frame.height/2
             layer.borderColor = UIColor.secondaryColor.cgColor
             layer.borderWidth = 1
+            self.titleLabel?.font =  UIFont.WTGfont(.semibold, size: 14)
+
             
         case 12:
             addShadowPathLayer(fillColor: UIColor.darkGreen)
@@ -123,6 +147,8 @@ import UIKit
             layer.cornerRadius = frame.height/2
             layer.borderColor = UIColor.black.cgColor
             layer.borderWidth = 1
+            self.titleLabel?.font =  UIFont.WTGfont(.semibold, size: 14)
+
             
         case 14:
             layer.backgroundColor = UIColor.white.cgColor
@@ -131,6 +157,14 @@ import UIKit
             layer.cornerRadius = frame.height/2
             layer.borderColor = UIColor.mangoYellowColor.cgColor
             layer.borderWidth = 1
+            self.titleLabel?.font =  UIFont.WTGfont(.semibold, size: 14)
+
+        case 15:
+            
+            layer.backgroundColor = UIColor.lightMangoColor.cgColor
+            self.setTitleColor(UIColor.mangoYellowColor, for: .normal)
+            layer.cornerRadius = frame.height/2
+            self.titleLabel?.font =  UIFont.WTGfont(.semibold, size: 14)
             
         default: break
             
@@ -170,7 +204,8 @@ import UIKit
             self.setTitleColor(UIColor.mangoYellowColor, for: .normal)
             self.imageView?.tintColor =  UIColor.mangoYellowColor
             layer.cornerRadius = frame.height/2
-            
+            self.titleLabel?.font =  UIFont.WTGfont(.semibold, size: 14)
+
         case 14:
             layer.backgroundColor = UIColor.white.cgColor
             self.setTitleColor(UIColor.mangoYellowColor, for: .normal)
@@ -178,6 +213,9 @@ import UIKit
             layer.cornerRadius = frame.height/2
             layer.borderColor = UIColor.mangoYellowColor.cgColor
             layer.borderWidth = 1
+            self.titleLabel?.font =  UIFont.WTGfont(.semibold, size: 14)
+            
+
         default: break
             
         }

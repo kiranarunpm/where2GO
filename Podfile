@@ -10,6 +10,7 @@ target 'Where2Go' do
   pod 'GoogleMaps', '~> 8.1'
   pod 'IQKeyboardManagerSwift'
   pod 'SideMenu', '~> 6.5'
+  pod 'MBProgressHUD', '~> 1.2.0'
 
 
   # Pods for Where2Go

@@ -21,7 +21,11 @@ class ChatHistoryVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
+    
+    @IBAction func backBtn(_ sender: Any) {
+        self.navigationController?.goBack()
+    }
+    
 }
 
 extension ChatHistoryVC: UITableViewDataSource, UITableViewDelegate{
@@ -34,5 +38,9 @@ extension ChatHistoryVC: UITableViewDataSource, UITableViewDelegate{
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = ChatVC.instantiate(fromAppStoryboard: .Home)
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
     
 }

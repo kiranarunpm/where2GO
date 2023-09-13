@@ -13,5 +13,8 @@ class EventDetailVC: UIViewController {
         super.viewDidLoad()
         
     }
-
+    
+    @IBAction func closeBtn(_ sender: Any) {
+        dismiss(animated: true)
+    }
 }

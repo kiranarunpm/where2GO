@@ -13,7 +13,7 @@ enum VerificationNav{
     case reset
     
 }
-class VerificationVC: UIViewController {
+class VerificationVC: BaseVC {
     var type: VerificationNav?
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +27,9 @@ class VerificationVC: UIViewController {
         }
     }
     
-    
+    @IBAction func backBtn(_ sender: Any) {
+        self.navigationController?.goBack()
+    }
     
 
 }

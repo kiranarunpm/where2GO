@@ -143,6 +143,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="TyH-EO-iwO"/>
+                    <connections>
+                        <outlet property="eventBtn" destination="avc-UM-w7B" id="Bfx-Kt-IXr"/>
+                        <outlet property="restaurantBtn" destination="6gH-mQ-mfg" id="bUv-EW-9K1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Hw-y5-VMR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

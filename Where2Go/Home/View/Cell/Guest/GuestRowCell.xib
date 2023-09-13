@@ -26,12 +26,24 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="p1E-je-MyT">
                                         <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C4J-Rb-6ag">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain"/>
+                                        <connections>
+                                            <action selector="cellTappedMethod:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Qcg-mx-Zib"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="p1E-je-MyT" secondAttribute="bottom" id="8dG-IX-5zj"/>
+                                    <constraint firstItem="C4J-Rb-6ag" firstAttribute="leading" secondItem="9PU-bk-YJK" secondAttribute="leading" id="CVn-Mh-JWm"/>
+                                    <constraint firstAttribute="trailing" secondItem="C4J-Rb-6ag" secondAttribute="trailing" id="Cx6-bU-FzV"/>
                                     <constraint firstItem="p1E-je-MyT" firstAttribute="top" secondItem="9PU-bk-YJK" secondAttribute="top" id="Lu9-LI-fsq"/>
+                                    <constraint firstAttribute="bottom" secondItem="C4J-Rb-6ag" secondAttribute="bottom" id="NmN-JJ-XlC"/>
                                     <constraint firstAttribute="height" constant="40" id="RCi-LA-leB"/>
+                                    <constraint firstItem="C4J-Rb-6ag" firstAttribute="top" secondItem="9PU-bk-YJK" secondAttribute="top" id="RT2-6c-5CD"/>
                                     <constraint firstItem="p1E-je-MyT" firstAttribute="leading" secondItem="9PU-bk-YJK" secondAttribute="leading" id="etM-LM-RSR"/>
                                     <constraint firstAttribute="trailing" secondItem="p1E-je-MyT" secondAttribute="trailing" id="nCa-Pz-Fla"/>
                                     <constraint firstAttribute="width" constant="40" id="qZT-NZ-nI0"/>
@@ -83,6 +95,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="img" destination="p1E-je-MyT" id="Ifd-Gy-BkO"/>
                 <outlet property="nameTxt" destination="7E5-4f-TTJ" id="Ght-6G-06e"/>
             </connections>
             <point key="canvasLocation" x="33.587786259541986" y="-8.8028169014084519"/>

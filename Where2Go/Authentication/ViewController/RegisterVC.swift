@@ -7,19 +7,20 @@
 
 import UIKit
 import TextFieldEffects
-class RegisterVC: UIViewController {
+class RegisterVC: BaseVC {
 
     @IBOutlet weak var confirmPasswordTxt: HoshiTextField!
     @IBOutlet weak var passwordTxt: HoshiTextField!
     @IBOutlet weak var emailTxt: HoshiTextField!
     @IBOutlet weak var usernameTxt: HoshiTextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.usernameTxt.placeholder = "Username"
         self.usernameTxt.placeholderFontScale = 0.9
         self.usernameTxt.keyboardType = .default
-
+        usernameTxt.placeholderLabel.font = UIFont.WTGfont(.bold, size: 14)
         
         self.emailTxt.placeholder = "Email"
         self.emailTxt.placeholderFontScale = 0.9
@@ -35,6 +36,7 @@ class RegisterVC: UIViewController {
         self.confirmPasswordTxt.placeholderFontScale = 0.9
         self.confirmPasswordTxt.isSecureTextEntry = true
         self.confirmPasswordTxt.keyboardType = .default
+        
 
     }
     @IBAction func backBtn(_ sender: Any) {
@@ -46,4 +48,5 @@ class RegisterVC: UIViewController {
         let vc = UploadImageVC.instantiate(fromAppStoryboard: .Authentication)
         self.navigationController?.pushViewController(vc, animated: true)
         }
+    
 }

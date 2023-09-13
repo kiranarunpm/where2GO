@@ -9,9 +9,13 @@ import UIKit
 import SideMenu
 class SideMenuVC: UIViewController {
 
+    @IBOutlet weak var eventBtn: UIButton!
+    @IBOutlet weak var restaurantBtn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        self.restaurantBtn.imageView?.tintColor =  UIColor.secondaryColor
+        self.eventBtn.imageView?.tintColor =  UIColor.secondaryColor
+
     }
     
     @IBAction func dismissBtn(_ sender: Any) {
@@ -36,6 +40,15 @@ class SideMenuVC: UIViewController {
         let vc = ChatHistoryVC.instantiate(fromAppStoryboard: .Home)
         self.navigationController?.pushViewController(vc, animated: true)
     }
+    
+    @IBAction func savedSearchBtn(_ sender: Any) {
+        let vc = SavedSearch.instantiate(fromAppStoryboard: .Home)
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    
+    
+    
     
     
 }

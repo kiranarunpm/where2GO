@@ -101,6 +101,9 @@
         <designable name="kxq-GE-Wrr">
             <size key="intrinsicContentSize" width="47" height="12"/>
         </designable>
+        <designable name="z8j-nL-1dG">
+            <size key="intrinsicContentSize" width="1200.6666666666667" height="17"/>
+        </designable>
     </designables>
     <resources>
         <namedColor name="primaryColor">

@@ -13,6 +13,7 @@ class CafeFilterVC: UIViewController {
     let meetingRoom = ["Available"]
     let searingArea = ["Indoor", "Outdoor", "Both"]
     let wedingCatering = ["Available"]
+    let capacityArr = ["0-20", "20-50", "50-100", "100-200"]
 
     @IBOutlet weak var tableView: UITableView!{
         didSet{
@@ -64,6 +65,7 @@ extension CafeFilterVC: UITableViewDelegate, UITableViewDataSource{
         }
         if index == "Capacity"{
             let cell = tableView.dequeueReusableCell(withIdentifier: MultiselectCell.identifire, for: indexPath) as! MultiselectCell
+            cell.arr = capacityArr
             return cell
             
         }

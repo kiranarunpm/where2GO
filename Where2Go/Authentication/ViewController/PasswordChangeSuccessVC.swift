@@ -7,7 +7,7 @@
 
 import UIKit
 
-class PasswordChangeSuccessVC: UIViewController {
+class PasswordChangeSuccessVC: BaseVC {
 
     override func viewDidLoad() {
         super.viewDidLoad()

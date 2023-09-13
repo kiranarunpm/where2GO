@@ -18,5 +18,7 @@ extension UIColor {
     
     static var darkBrownColor  : UIColor { return UIColor(named: "darkBrownColor")!}
     static var lightGrayColor  : UIColor { return UIColor(named: "lightGrayColor")!}
+    static var lightMangoColor  : UIColor { return UIColor(named: "lightMangoColor")!}
+    static var morelightGreen  : UIColor { return UIColor(named: "morelightGreen")!}
 
 }

@@ -41,6 +41,13 @@
 		9F3C32DF2AA241620017782A /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3C32DE2AA241620017782A /* ImageModel.swift */; };
 		9F3C32E22AA2424B0017782A /* ImagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F3C32E02AA2424B0017782A /* ImagCell.xib */; };
 		9F3C32E32AA2424B0017782A /* ImagCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3C32E12AA2424B0017782A /* ImagCell.swift */; };
+		9F4094F92AACDF8900B0AB85 /* ARBusinessServiceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4094F72AACDF8900B0AB85 /* ARBusinessServiceHelper.swift */; };
+		9F4094FA2AACDF8900B0AB85 /* CommonServiceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4094F82AACDF8900B0AB85 /* CommonServiceHelper.swift */; };
+		9F4094FD2AACDFA900B0AB85 /* ARServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4094FC2AACDFA900B0AB85 /* ARServiceManager.swift */; };
+		9F4095002AACE17200B0AB85 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4094FF2AACE17200B0AB85 /* LoginModel.swift */; };
+		9F4095032AACE25500B0AB85 /* AuthenticationVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4095022AACE25500B0AB85 /* AuthenticationVM.swift */; };
+		9F4095082AAD027F00B0AB85 /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4095072AAD027F00B0AB85 /* RegisterModel.swift */; };
+		9F40950A2AAD03C300B0AB85 /* ImagePickerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4095092AAD03C300B0AB85 /* ImagePickerManager.swift */; };
 		9F43960F2A9DB82A00DDF501 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F43960D2A9DB82A00DDF501 /* MenuCell.swift */; };
 		9F4396102A9DB82A00DDF501 /* MenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F43960E2A9DB82A00DDF501 /* MenuCell.xib */; };
 		9F4396122A9DCFA200DDF501 /* MenuDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4396112A9DCFA200DDF501 /* MenuDetailVC.swift */; };
@@ -162,6 +169,13 @@
 		9F3C32DE2AA241620017782A /* ImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
 		9F3C32E02AA2424B0017782A /* ImagCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImagCell.xib; sourceTree = "<group>"; };
 		9F3C32E12AA2424B0017782A /* ImagCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagCell.swift; sourceTree = "<group>"; };
+		9F4094F72AACDF8900B0AB85 /* ARBusinessServiceHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARBusinessServiceHelper.swift; sourceTree = "<group>"; };
+		9F4094F82AACDF8900B0AB85 /* CommonServiceHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonServiceHelper.swift; sourceTree = "<group>"; };
+		9F4094FC2AACDFA900B0AB85 /* ARServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARServiceManager.swift; sourceTree = "<group>"; };
+		9F4094FF2AACE17200B0AB85 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		9F4095022AACE25500B0AB85 /* AuthenticationVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationVM.swift; sourceTree = "<group>"; };
+		9F4095072AAD027F00B0AB85 /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
+		9F4095092AAD03C300B0AB85 /* ImagePickerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerManager.swift; sourceTree = "<group>"; };
 		9F43960D2A9DB82A00DDF501 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		9F43960E2A9DB82A00DDF501 /* MenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuCell.xib; sourceTree = "<group>"; };
 		9F4396112A9DCFA200DDF501 /* MenuDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuDetailVC.swift; sourceTree = "<group>"; };
@@ -332,6 +346,8 @@
 		9F14116D2A8E8ADB00FF7B3D /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				9F4095012AACE22C00B0AB85 /* ViewModel */,
+				9F4094FE2AACE15200B0AB85 /* Model */,
 				9F1411762A8E925F00FF7B3D /* ViewController */,
 				9F14116E2A8E8AEE00FF7B3D /* View */,
 			);
@@ -373,6 +389,47 @@
 				9FE6ABB02A9282F7007337B5 /* PasswordChangeSuccessVC.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		9F4094F62AACDF6800B0AB85 /* ServiceHelper */ = {
+			isa = PBXGroup;
+			children = (
+				9F4094F72AACDF8900B0AB85 /* ARBusinessServiceHelper.swift */,
+				9F4094F82AACDF8900B0AB85 /* CommonServiceHelper.swift */,
+			);
+			path = ServiceHelper;
+			sourceTree = "<group>";
+		};
+		9F4094FB2AACDF9900B0AB85 /* ServiceManager */ = {
+			isa = PBXGroup;
+			children = (
+				9F4094FC2AACDFA900B0AB85 /* ARServiceManager.swift */,
+			);
+			path = ServiceManager;
+			sourceTree = "<group>";
+		};
+		9F4094FE2AACE15200B0AB85 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9F4094FF2AACE17200B0AB85 /* LoginModel.swift */,
+				9F4095072AAD027F00B0AB85 /* RegisterModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9F4095012AACE22C00B0AB85 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9F4095022AACE25500B0AB85 /* AuthenticationVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9F4095042AACE64700B0AB85 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		9F582D572AA3010200D732F2 /* Detail&Home */ = {
@@ -448,6 +505,9 @@
 		9F5B2D302A8B3EB80043F330 /* Where2Go */ = {
 			isa = PBXGroup;
 			children = (
+				9F4095042AACE64700B0AB85 /* New Group */,
+				9F4094FB2AACDF9900B0AB85 /* ServiceManager */,
+				9F4094F62AACDF6800B0AB85 /* ServiceHelper */,
 				9F87EA4A2AA3A1F000CC5988 /* SideMenu */,
 				9F8DBA3F2A93D14900E7A0DC /* Home */,
 				9F14116D2A8E8ADB00FF7B3D /* Authentication */,
@@ -503,6 +563,7 @@
 				9F1411692A8E677C00FF7B3D /* CustomPageControl.swift */,
 				9F1943A42A8F80750058CDCC /* View+Extension.swift */,
 				9F4396132A9DD4B200DDF501 /* PresentationController.swift */,
+				9F4095092AAD03C300B0AB85 /* ImagePickerManager.swift */,
 			);
 			path = SupportFiles;
 			sourceTree = "<group>";
@@ -873,11 +934,13 @@
 				9F582D562AA2FA3600D732F2 /* GuestModel.swift in Sources */,
 				9F3455582A97B0B7002455DF /* AmenitiesCell.swift in Sources */,
 				9F74B2E62AA79639000A7068 /* CafeFilterVC.swift in Sources */,
+				9F40950A2AAD03C300B0AB85 /* ImagePickerManager.swift in Sources */,
 				9F582D5A2AA3013F00D732F2 /* ChatVC.swift in Sources */,
 				9F582D532AA2F5C500D732F2 /* GuestRowCell.swift in Sources */,
 				9FFC2B2C2AAC389300DA1DD3 /* SearchCell.swift in Sources */,
 				9F65E4982A9B782F00370C7D /* ChatReplayCell.swift in Sources */,
 				9FC21F5D2AA62E9200856D57 /* BookMarkCell.swift in Sources */,
+				9F4095002AACE17200B0AB85 /* LoginModel.swift in Sources */,
 				9FC21F682AA64AAE00856D57 /* ListingVC.swift in Sources */,
 				9FD8C99E2A9E10E0002F44D1 /* EventDetailVC.swift in Sources */,
 				9F8DBA4D2A93D36100E7A0DC /* HomeWidgetCell.swift in Sources */,
@@ -886,6 +949,7 @@
 				9FC21F5A2AA62DB900856D57 /* BookmarkVC.swift in Sources */,
 				9F4396142A9DD4B200DDF501 /* PresentationController.swift in Sources */,
 				9F1943A12A8F7C650058CDCC /* WTGView.swift in Sources */,
+				9F4094F92AACDF8900B0AB85 /* ARBusinessServiceHelper.swift in Sources */,
 				9F87EA532AA3A33100CC5988 /* SideMenuVC.swift in Sources */,
 				9F582D622AA307C000D732F2 /* ChatBubbleLeft.swift in Sources */,
 				9F5B2D592A8B44A80043F330 /* Font+Extension.swift in Sources */,
@@ -893,6 +957,8 @@
 				9F25B9022AA3309A0091B995 /* ChatHistoryVC.swift in Sources */,
 				9F87EA502AA3A2C600CC5988 /* BaseVC.swift in Sources */,
 				9F5B2D362A8B3EB80043F330 /* ViewController.swift in Sources */,
+				9F4094FD2AACDFA900B0AB85 /* ARServiceManager.swift in Sources */,
+				9F4094FA2AACDF8900B0AB85 /* CommonServiceHelper.swift in Sources */,
 				9FB9C92C2A8B90CE00A05B11 /* UINavigationController+Extension.swift in Sources */,
 				9F18B00A2A9D228D00508FE5 /* CategoryCell.swift in Sources */,
 				9F14115F2A8E4D1400FF7B3D /* WalkThroughCell.swift in Sources */,
@@ -906,6 +972,7 @@
 				9F8DBA3E2A93CD4900E7A0DC /* HomeVC.swift in Sources */,
 				9F1411682A8E63A700FF7B3D /* Float+Extension.swift in Sources */,
 				9F1943A52A8F80750058CDCC /* View+Extension.swift in Sources */,
+				9F4095082AAD027F00B0AB85 /* RegisterModel.swift in Sources */,
 				9F1411622A8E4F9300FF7B3D /* WalkThroughVC.swift in Sources */,
 				9F86F6722A9739F900747D2E /* itemHorizontalCell.swift in Sources */,
 				9FC21F632AA634D600856D57 /* SavedSearchCell.swift in Sources */,
@@ -914,6 +981,7 @@
 				9F86F66E2A97362100747D2E /* SwitchEvent.swift in Sources */,
 				9F582D5F2AA307C000D732F2 /* ChatBubbleRight.swift in Sources */,
 				9F25B9052AA3320E0091B995 /* ChatHistoryCell.swift in Sources */,
+				9F4095032AACE25500B0AB85 /* AuthenticationVM.swift in Sources */,
 				9F3C32E32AA2424B0017782A /* ImagCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1082,9 +1150,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.SmartHatch.Where2Go;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -1116,9 +1187,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.SmartHatch.Where2Go;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

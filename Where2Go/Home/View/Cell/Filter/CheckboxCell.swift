@@ -17,7 +17,7 @@ class CheckboxCell: UITableViewCell {
             self.colView.register(UINib(nibName: CheckboxCelll.identifire , bundle: nil), forCellWithReuseIdentifier: CheckboxCelll.identifire)
             
             let _flowLayout = UICollectionViewFlowLayout()
-            _flowLayout.itemSize = CGSize(width: 180, height: 40)
+            _flowLayout.itemSize = CGSize(width: 150, height: 40)
             _flowLayout.sectionInset = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 5)
             _flowLayout.scrollDirection = .horizontal
             _flowLayout.minimumInteritemSpacing = 0.0
@@ -39,7 +39,7 @@ class CheckboxCell: UITableViewCell {
     }
     
 }
-extension CheckboxCell: UICollectionViewDelegate, UICollectionViewDataSource{
+extension CheckboxCell: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CheckboxCelll.identifire, for: indexPath) as! CheckboxCelll
         cell.txt.text = arr[indexPath.row]
@@ -50,4 +50,5 @@ extension CheckboxCell: UICollectionViewDelegate, UICollectionViewDataSource{
         return arr.count
     }
 }
+
     

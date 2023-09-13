@@ -50,6 +50,8 @@ extension HomeVC: UITableViewDataSource, UITableViewDelegate{
         let index = sectionArr[section]
         if index == "upCommingEvent"{
             return 5
+        }else if index == "Upcoming Events"{
+            return 0
         }else{
             return 1
         }
@@ -59,7 +61,7 @@ extension HomeVC: UITableViewDataSource, UITableViewDelegate{
         let index = sectionArr[indexPath.section]
         if index == "header"{
             let cell = tableView.dequeueReusableCell(withIdentifier: HomeHeaderCell.identifire, for: indexPath) as! HomeHeaderCell
-            cell.headerTxt.text = sectionArr[indexPath.row + 1] 
+            cell.headerTxt.text = sectionArr[indexPath.section + 1]
             return cell
         }else if index == "Trending Cafes"{
             let cell = tableView.dequeueReusableCell(withIdentifier: HomeWidgetCell.identifite, for: indexPath) as! HomeWidgetCell

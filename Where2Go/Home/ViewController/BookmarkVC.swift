@@ -34,6 +34,7 @@ extension BookmarkVC: UITableViewDataSource, UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: BookMarkCell.identifire, for: indexPath) as! BookMarkCell
+        cell.selectionStyle = .none
         return cell
     }
 }

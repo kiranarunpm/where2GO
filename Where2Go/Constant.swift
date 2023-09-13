@@ -9,9 +9,11 @@ import Foundation
 
 enum SaveData: String{
     case accessToken
-    case fullname
+    case refreshToken
+    case name
     case email
-    case mobile
+    case image
+    case profile_path
     case walkthough
 }
 
@@ -27,7 +29,7 @@ class User{
     // ********* Get Data **********
     
     var hasToken: Bool{
-        return token == "3" ? false : true
+        return token == "" ? false : true
     }
 
     var token: String {
